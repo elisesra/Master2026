@@ -1,0 +1,972 @@
+[ {
+  "high_level_requirement" : "The Clarus system shall implement quality checking processes as soon as data become available.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall implement quality checking processes as soon as data become available.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QChS",
+      "requirement" : "The QChS shall initiate quality checking on each data item as soon as that data item becomes available to the QChS."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall record the methods applied when deriving quality checking information.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall record the methods applied when deriving quality checking information.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QChS",
+      "requirement" : "The Quality Checking Services shall record the methods applied when deriving quality checking information."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to implement quality checking rules for each environmental parameter.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to implement quality checking rules for each environmental parameter.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAS",
+      "requirement" : "The CAS shall provide the capability to define quality checking rules that are associated with specific environmental parameters."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "The QChS shall apply all quality checking rules defined for a given environmental parameter to the data of that parameter."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to implement quality checking rules for specific environmental situations.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to implement quality checking rules for specific environmental situations.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAS",
+      "requirement" : "The Configuration & Administration Service shall provide a persistent repository for storing quality checking rule definitions."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "The Quality Checking Services shall be able to retrieve quality checking rule definitions from the Configuration & Administration Service."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "The Quality Checking Services shall support quality checking rule definitions that include a condition specifying the environmental situation for which the rule is applicable."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to implement quality checking rules specific to observation locations.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to implement quality checking rules specific to observation locations.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAS",
+      "requirement" : "The CAS shall support the definition of quality checking rules that include a condition based on observation location identifiers."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "The QChS shall evaluate quality checking rules only against data from the observation location specified in the rule."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to base its quality checking process on historical environmental data.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to base its quality checking process on historical environmental data.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QChS",
+      "requirement" : "The QChS shall retrieve historical environmental data from QEDS when performing quality checks."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS shall provide a query interface for historical environmental data to QChS."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to use multiple algorithms for its quality checking process.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to use multiple algorithms for its quality checking process.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QChS",
+      "requirement" : "The Quality Checking Services (QChS) shall support at least two distinct quality checking algorithms."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall allow access to new surface transportation-related environmental data.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall allow access to new surface transportation-related environmental data.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDS",
+      "requirement" : "The Qualified Environmental Data Services shall provide an application programming interface that allows retrieval of surface transportation-related environmental data based on the time it was added to the system."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall enable administrators to manage security groups.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall enable administrators to manage security groups.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAUI",
+      "requirement" : "The CAUI shall provide a view listing all security groups to an authenticated administrator."
+    }, {
+      "allocation" : "CAUI",
+      "requirement" : "The CAUI shall allow an authenticated administrator to create a new security group."
+    }, {
+      "allocation" : "CAUI",
+      "requirement" : "The CAUI shall allow an authenticated administrator to modify an existing security group."
+    }, {
+      "allocation" : "CAUI",
+      "requirement" : "The CAUI shall allow an authenticated administrator to delete a security group."
+    }, {
+      "allocation" : "CAUI",
+      "requirement" : "The CAUI shall restrict access to security group management functions to authenticated administrators."
+    }, {
+      "allocation" : "CAS",
+      "requirement" : "The CAS shall provide an API to create a security group."
+    }, {
+      "allocation" : "CAS",
+      "requirement" : "The CAS shall provide an API to retrieve all security groups."
+    }, {
+      "allocation" : "CAS",
+      "requirement" : "The CAS shall provide an API to retrieve a specific security group."
+    }, {
+      "allocation" : "CAS",
+      "requirement" : "The CAS shall provide an API to update a security group."
+    }, {
+      "allocation" : "CAS",
+      "requirement" : "The CAS shall provide an API to delete a security group."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to restrict environmental data publication based on source.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to restrict environmental data publication based on source.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAS",
+      "requirement" : "CAS shall provide a configuration to specify a list of environmental data sources for which publication is restricted."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "QEDS shall, when publishing environmental data, check whether the data's source is in the restricted sources list and, if so, suppress publication of that data."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall record statistics about its operation.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall record statistics about its operation.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "DOG",
+      "requirement" : "The DOG shall record the system startup timestamp as an operational statistic."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall log data transactions.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall log data transactions.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAS",
+      "requirement" : "The Configuration & Administration Service shall record a log entry for each data transaction that occurs in the Clarus system, including a timestamp, transaction identifier, and outcome."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall acquire, process, and disseminate environmental metadata.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall acquire, process, and disseminate environmental metadata.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "EMS",
+      "requirement" : "EMS shall acquire environmental metadata."
+    }, {
+      "allocation" : "EMS",
+      "requirement" : "EMS shall process environmental metadata."
+    }, {
+      "allocation" : "EMS",
+      "requirement" : "EMS shall disseminate environmental metadata."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall manage environmental data and metadata according to the Clarus data sharing agreements.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall manage environmental data and metadata according to the Clarus data sharing agreements.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAS",
+      "requirement" : "CAS shall store the Clarus data sharing agreement rules."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "QChS shall validate environmental data against the quality criteria defined in the Clarus data sharing agreements."
+    }, {
+      "allocation" : "EMS",
+      "requirement" : "EMS shall validate environmental metadata against the metadata standards defined in the Clarus data sharing agreements."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "QEDS shall store only qualified environmental data that has been validated by QChS in accordance with the Clarus data sharing agreements."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall collect, quality check, and disseminate environmental data.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall collect, quality check, and disseminate environmental data.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services subsystem shall collect environmental data."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "The Quality Checking Services subsystem shall perform quality checks on environmental data."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The Qualified Environmental Data Services subsystem shall disseminate qualified environmental data."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall provide environmental data quality flags.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall provide environmental data quality flags.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QChS",
+      "requirement" : "The Quality Checking Services shall compute quality flags for each environmental data record."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The Qualified Environmental Data Services shall include the quality flags in the qualified environmental data it provides."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall allow human quality checks of environmental data.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall allow human quality checks of environmental data.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "MEUI",
+      "requirement" : "The MEUI shall display environmental data records to a human operator."
+    }, {
+      "allocation" : "MEUI",
+      "requirement" : "The MEUI shall provide controls for a human operator to assign a quality flag to a displayed environmental data record."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "The QChS shall accept and store the quality flag assigned by a human operator via the MEUI."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall provide a user interface for administration.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall provide a user interface for administration.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAUI",
+      "requirement" : "CAUI shall provide a user interface for administration."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to detect data submission errors.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to detect data submission errors.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services shall detect submission errors where the data payload is missing required fields or has an invalid format."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "The Quality Checking Services shall detect submission errors where data values violate configured quality rules, such as range checks or consistency checks."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to access in-situ environmental observations from data collectors.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to access in-situ environmental observations from data collectors.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services subsystem shall be able to retrieve in-situ environmental observations from data collectors."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to access remotely sensed environmental observations from data collectors.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to access remotely sensed environmental observations from data collectors.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "Collector Services shall retrieve remotely sensed environmental observations from data collectors."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to receive roadway weather measurements derived from VII data.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to receive roadway weather measurements derived from VII data.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services (CS) subsystem shall be able to receive roadway weather measurements derived from VII data."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data derived from images.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall accept environmental data derived from images.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services subsystem shall accept environmental data derived from images."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to retrieve environmental data directly from environmental sensor station collectors.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to retrieve environmental data directly from environmental sensor station collectors.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services subsystem shall retrieve environmental data directly from environmental sensor station collectors upon request."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall minimize the time for data acquisition.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall minimize the time for data acquisition.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Service shall commence data acquisition within 100 ms of receiving a start trigger."
+    }, {
+      "allocation" : "SS",
+      "requirement" : "The Schedule Service shall assign the highest processing priority to data acquisition tasks."
+    }, {
+      "allocation" : "DOG",
+      "requirement" : "The Watchdog shall measure the time from acquisition request to data availability and log any delays exceeding a configurable threshold."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall process data as they are received.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall process data as they are received.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "Upon receipt of a data item, CS shall forward that data item to QChS for processing."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "Upon receipt of a data item from CS, QChS shall perform quality checking on that data item."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "Upon receipt of a qualified data item from QChS, QEDS shall store that data item."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall collect pavement-related observations.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall collect pavement-related observations.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The CS shall collect pavement-related observations."
+    }, {
+      "allocation" : "MEUI",
+      "requirement" : "The MEUI shall collect pavement-related observations."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from railway systems or in-situ ESS along tracks.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall accept environmental data from railway systems or in-situ ESS along tracks.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "CS shall accept environmental data from railway systems."
+    }, {
+      "allocation" : "CS",
+      "requirement" : "CS shall accept environmental data from in-situ ESS along tracks."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from railroad vehicles.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall accept environmental data from railroad vehicles.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services (CS) shall accept environmental data transmitted from railroad vehicles."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from (roadway) vehicles.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall accept environmental data from (roadway) vehicles.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services shall accept environmental data from roadway vehicles."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from maintenance and construction vehicles.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall accept environmental data from maintenance and construction vehicles.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services shall accept environmental data from maintenance and construction vehicles."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from service patrol vehicles.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall accept environmental data from service patrol vehicles.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services subsystem shall accept environmental data from service patrol vehicles."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from transit vehicles.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall accept environmental data from transit vehicles.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "Collector Services shall accept environmental data from transit vehicles."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from emergency vehicles.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall accept environmental data from emergency vehicles.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "Collector Services shall receive environmental data from emergency vehicles."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to receive weather data from weather service providers.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to receive weather data from weather service providers.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services shall receive weather data from weather service providers."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system baseline data types shall be defined by the NTCIP ESS 1204 standard.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system baseline data types shall be defined by the NTCIP ESS 1204 standard.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAS",
+      "requirement" : "The CAS shall define the Clarus system baseline data types in accordance with the NTCIP ESS 1204 standard."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system data definitions shall be consistent with the ITE TM 1.03 standard, Functional Level Traffic Management Data Dictionary (TMDD).",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system data definitions shall be consistent with the ITE TM 1.03 standard, Functional Level Traffic Management Data Dictionary (TMDD).\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAS",
+      "requirement" : "The CAS data definitions shall be consistent with the ITE TM 1.03 standard, Functional Level Traffic Management Data Dictionary (TMDD)."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept only observations that include location, timestamp, and source metadata.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall accept only observations that include location, timestamp, and source metadata.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services shall accept only those observations that contain location, timestamp, and source metadata fields."
+    }, {
+      "allocation" : "MEUI",
+      "requirement" : "The Manual Entry User Interface shall accept only those observations that contain location, timestamp, and source metadata fields."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept only observations of identified measurement types and units.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall accept only observations of identified measurement types and units.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "CS shall reject an observation if its measurement type is not included in the set of identified measurement types."
+    }, {
+      "allocation" : "CS",
+      "requirement" : "CS shall reject an observation if its unit is not included in the set of identified units for its measurement type."
+    }, {
+      "allocation" : "MEUI",
+      "requirement" : "MEUI shall reject an observation if its measurement type is not included in the set of identified measurement types."
+    }, {
+      "allocation" : "MEUI",
+      "requirement" : "MEUI shall reject an observation if its unit is not included in the set of identified units for its measurement type."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to acquire, process, and disseminate environmental data from across North America.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to acquire, process, and disseminate environmental data from across North America.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services shall be capable of acquiring environmental data from sources located within North America."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "The Quality Checking Services shall process acquired environmental data by applying quality checks to ensure it meets defined standards."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The Qualified Environmental Data Services shall disseminate qualified environmental data to authorized consumers."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept data through a Clarus standard interface.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall accept data through a Clarus standard interface.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "CS shall accept data via a Clarus standard interface."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to communicate with environmental sensor stations through its collector using the NTCIP ESS 1204.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to communicate with environmental sensor stations through its collector using the NTCIP ESS 1204.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "Collector Services shall support communication with environmental sensor stations using the NTCIP ESS 1204 protocol."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to communicate with RWIS databases through their native interfaces.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to communicate with RWIS databases through their native interfaces.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services shall be able to connect to an RWIS database using its native interface."
+    }, {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services shall be able to send data requests to the RWIS database through the native interface."
+    }, {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services shall be able to receive data from the RWIS database via the native interface."
+    }, {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services shall be able to handle communication errors when interacting with an RWIS database."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall transfer data as efficiently as possible.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall transfer data as efficiently as possible.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services shall compress all data payloads prior to transfer to internal services."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The Qualified Environmental Data Services shall batch multiple data responses into a single network packet to reduce overhead."
+    }, {
+      "allocation" : "EMS",
+      "requirement" : "The Environmental Metadata Services shall use a least-recently-used cache to minimize repeated data transfers from the database."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall employ industry standards to minimize implementation impact to users and providers.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall employ industry standards to minimize implementation impact to users and providers.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAUI",
+      "requirement" : "The CAUI shall employ industry standards for its user interface to minimize implementation impact to users."
+    }, {
+      "allocation" : "MEUI",
+      "requirement" : "The MEUI shall employ industry standards for its manual entry interface to minimize implementation impact to users."
+    }, {
+      "allocation" : "CS",
+      "requirement" : "The CS shall employ industry standards for its collector service interface to minimize implementation impact to providers."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to automatically recover from an unexpected shutdown.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to automatically recover from an unexpected shutdown.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "DOG",
+      "requirement" : "DOG shall automatically restart any service that terminates unexpectedly."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall disseminate environmental metadata in response to polling.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall disseminate environmental metadata in response to polling.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "EMS",
+      "requirement" : "The EMS subsystem shall, upon receiving a polling request for environmental metadata, respond with the requested environmental metadata."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall disseminate data using standard Internet protocols.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall disseminate data using standard Internet protocols.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS subsystem shall disseminate qualified environmental data using standard Internet protocols."
+    }, {
+      "allocation" : "EMS",
+      "requirement" : "The EMS subsystem shall disseminate environmental metadata using standard Internet protocols."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to provide sensor equipment metadata in response to a request.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to provide sensor equipment metadata in response to a request.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "EMS",
+      "requirement" : "The Environmental Metadata Services (EMS) shall provide sensor equipment metadata in response to a request."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall minimize the time for data dissemination.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall minimize the time for data dissemination.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The CS shall transmit each collected data item to the QChS immediately upon collection without any intentional queuing delay."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "The QChS shall process each data item for quality checking individually upon receipt and forward the result to the QEDS without batching delays."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS shall publish each qualified data item to all subscribed dissemination endpoints immediately upon receipt from the QChS."
+    }, {
+      "allocation" : "EMS",
+      "requirement" : "The EMS shall provide requested environmental metadata to the QEDS without delay upon request."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall respond to queries for environmental metadata from the available metadata.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall respond to queries for environmental metadata from the available metadata.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "EMS",
+      "requirement" : "The Environmental Metadata Services shall respond to queries for environmental metadata from the available metadata."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall respond to a request for information within five minutes.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall respond to a request for information within five minutes.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAS",
+      "requirement" : "The Configuration & Administration Service shall respond to a request for configuration information within five minutes."
+    }, {
+      "allocation" : "EMS",
+      "requirement" : "The Environmental Metadata Services shall respond to a request for environmental metadata within five minutes."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The Qualified Environmental Data Services shall respond to a request for qualified environmental data within five minutes."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall maintain a dynamic library of data for at least seven days.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall maintain a dynamic library of data for at least seven days.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDC",
+      "requirement" : "The QEDC subsystem shall retain qualified environmental data for at least seven days from the time of its storage."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall allow service providers to select specific desired data sets.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall allow service providers to select specific desired data sets.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAUI",
+      "requirement" : "The CAUI subsystem shall provide a user interface that enables a service provider to select one or more data sets from a list of available data sets."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS subsystem shall provide a list of available data sets to the CAUI subsystem upon request."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall respond to queries for environmental data from the available data.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall respond to queries for environmental data from the available data.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDS",
+      "requirement" : "The Qualified Environmental Data Services (QEDS) shall respond to a query for environmental data by returning the requested data from the available data."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall support 470 million current observations.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall support 470 million current observations.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS subsystem shall be capable of storing at least 470 million current observations."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall disseminate data in response to a scheduled request.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall disseminate data in response to a scheduled request.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "SS",
+      "requirement" : "SS shall, when a scheduled request becomes due, send a dissemination trigger to QEDS."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "QEDS shall, upon receiving a dissemination trigger from SS, retrieve the data specified by the scheduled request and disseminate it to the destination specified in that request."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall disseminate environmental data in response to polling.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall disseminate environmental data in response to polling.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS subsystem shall provide environmental data in response to a polling request."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall disseminate data in response to a change notification request.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall disseminate data in response to a change notification request.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS subsystem shall disseminate data upon receipt of a change notification request."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to notify subscribers when data sets become available.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to notify subscribers when data sets become available.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAS",
+      "requirement" : "The Configuration & Administration Service shall maintain a list of subscribers to be notified when data sets become available."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The Qualified Environmental Data Services shall send a notification to all subscribers in the subscriber list when a new qualified data set becomes available."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall provide notification of data quality conditions to data contributors.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall provide notification of data quality conditions to data contributors.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QChS",
+      "requirement" : "The Quality Checking Services shall generate a notification message for each data quality condition identified for a data contributor."
+    }, {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services shall send the generated notification messages to the corresponding data contributors."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall enable quality managers to review which quality checks passed or failed.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall enable quality managers to review which quality checks passed or failed.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAUI",
+      "requirement" : "The CAUI shall display for each quality check the pass/fail outcome associated with the environmental data selected by the quality manager."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS shall provide an API that returns the pass/fail outcome of each quality check for a given identifier of environmental data."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall disseminate NWS watches, warnings, and advisories.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall disseminate NWS watches, warnings, and advisories.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS shall disseminate NWS watches."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS shall disseminate NWS warnings."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS shall disseminate NWS advisories."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to disseminate data based on spatial queries.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to disseminate data based on spatial queries.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDS",
+      "requirement" : "QEDS shall support spatial queries to retrieve qualified environmental data that satisfies the spatial criteria."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall enable environmental data queries by timestamp.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall enable environmental data queries by timestamp.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS subsystem shall provide an interface to query environmental data filtered by timestamp."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall enable environmental data queries by location reference.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall enable environmental data queries by location reference.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDS",
+      "requirement" : "The Qualified Environmental Data Services shall support querying environmental data by location reference."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall enable environmental data queries by quality.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall enable environmental data queries by quality.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS shall provide a query endpoint that accepts a quality parameter and returns only environmental data that matches that quality."
+    }, {
+      "allocation" : "QEDC",
+      "requirement" : "The QEDC shall store environmental data with associated quality metadata such that data can be retrieved based on quality values."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall enable environmental data queries by source.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall enable environmental data queries by source.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS shall provide an API endpoint that returns qualified environmental data filtered by a specified source identifier."
+    }, {
+      "allocation" : "QEDC",
+      "requirement" : "The QEDC shall store qualified environmental data with an associated source attribute that can be used for query filtering."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall allow users to create a data subscription request.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall allow users to create a data subscription request.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CAUI",
+      "requirement" : "The CAUI shall provide an interface that allows users to initiate the creation of a data subscription request."
+    }, {
+      "allocation" : "CAS",
+      "requirement" : "The CAS shall accept a data subscription request from the CAUI and create a corresponding subscription request record."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to publish new data within twenty minutes of data receipt.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to publish new data within twenty minutes of data receipt.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QEDS",
+      "requirement" : "QEDS shall publish new data within twenty minutes of the data being received by the Clarus system."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to handle three hundred simultaneous requests for environmental data.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to handle three hundred simultaneous requests for environmental data.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "EMS",
+      "requirement" : "The EMS subsystem shall successfully respond to all 300 simultaneous requests for environmental metadata without error."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The QEDS subsystem shall successfully respond to all 300 simultaneous requests for qualified environmental data without error."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall detect out of range values.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall detect out of range values.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QChS",
+      "requirement" : "When presented with a measured value and its parameter's defined acceptable range, the QChS shall determine that the value is out of range if it is less than the lower limit or greater than the upper limit."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall not modify original observations.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall not modify original observations.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services shall not modify original observations."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "The Quality Checking Services shall not modify original observations."
+    }, {
+      "allocation" : "QEDS",
+      "requirement" : "The Qualified Environmental Data Services shall not modify original observations."
+    }, {
+      "allocation" : "MEUI",
+      "requirement" : "The Manual Entry User Interface shall not modify original observations."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to implement quality checking spatial tests using available data.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to implement quality checking spatial tests using available data.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QChS",
+      "requirement" : "QChS shall execute spatial quality checking tests on data that is available within the Clarus system."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to base its quality checking process on values from multiple observations.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to base its quality checking process on values from multiple observations.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QChS",
+      "requirement" : "The QChS shall support quality checking rules that reference values from more than one observation."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "The QChS shall retrieve observation data from QEDS for all observations referenced in a quality checking rule prior to evaluating the rule."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to base its quality checking process on values distributed in time.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to base its quality checking process on values distributed in time.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QChS",
+      "requirement" : "The Quality Checking Services shall support quality checking rules that evaluate data values based on their temporal distribution."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to complete an automated quality checking check of environmental data within ten seconds of data receipt.",
+  "prompt_style" : "cot1",
+  "prompt" : "You are a requirements engineer. Derive atomic, testable low-level requirements from one high-level requirement.\n\nReason through the following process internally before producing the answer:\n1. Identify the HLR's required action, affected information or behavior, constraints, and modal wording.\n2. Infer the smallest justified set of responsible subsystems from the allocation catalogue.\n3. Determine the responsibility contributed by each inferred subsystem without inventing behavior.\n4. Split compound responsibilities into atomic, testable LLRs only when necessary.\n5. Verify that every LLR preserves the HLR's intent and modal wording and names its responsible subsystem.\n6. Remove speculative, duplicate, or cross-subsystem requirements.\n\nDo not reveal the reasoning process. Return only the final JSON object, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\n\nAllocation catalogue:\n- CAS = Configuration & Administration Service\n- CAUI = Configuration & Administration User Interface\n- CS = Collector Services\n- DOG = Watchdog\n- EMC = Environmental Metadata Cache\n- EMS = Environmental Metadata Services\n- MEUI = Manual Entry User Interface\n- QEDC = Qualified Environmental Data\n- QEDS = Qualified Environmental Data Services\n- QChS = Quality Checking Services\n- SS = Schedule Service\n\nHigh-level requirement:\nThe Clarus system shall be able to complete an automated quality checking check of environmental data within ten seconds of data receipt.\n\nFinal JSON:\n",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The Collector Services subsystem shall forward received environmental data and its receipt timestamp to the Quality Checking Services subsystem."
+    }, {
+      "allocation" : "QChS",
+      "requirement" : "The Quality Checking Services subsystem shall complete an automated quality check on the environmental data within ten seconds of the receipt timestamp provided by the Collector Services subsystem."
+    } ]
+  }
+} ]

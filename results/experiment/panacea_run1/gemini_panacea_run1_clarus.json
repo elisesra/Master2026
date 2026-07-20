@@ -1,0 +1,1223 @@
+[ {
+  "high_level_requirement" : "The Clarus system shall implement quality checking processes as soon as data become available.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall implement quality checking processes as soon as data become available.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS-DM",
+      "requirement" : "The CLARUS system shall detect the availability of new incoming data."
+    }, {
+      "allocation" : "CLARUS-QC",
+      "requirement" : "The CLARUS system shall initiate quality checking processes immediately upon detecting that new data has become available."
+    }, {
+      "allocation" : "CLARUS-QC",
+      "requirement" : "The CLARUS system shall execute defined quality checking processes on the newly available data."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall record the methods applied when deriving quality checking information.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall record the methods applied when deriving quality checking information.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall record the specific algorithm or procedure applied when deriving quality checking information."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall associate the recorded method information with the generated quality checking results."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to implement quality checking rules for each environmental parameter.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to implement quality checking rules for each environmental parameter.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS-QC",
+      "requirement" : "The CLARUS system shall support the configuration of unique quality checking rules for each environmental parameter."
+    }, {
+      "allocation" : "CLARUS-QC",
+      "requirement" : "The CLARUS system shall execute the associated quality checking rules against the incoming data for each environmental parameter."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to implement quality checking rules for specific environmental situations.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to implement quality checking rules for specific environmental situations.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall support the configuration of quality checking rules mapped to specific environmental situations."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall execute the configured quality checking rules when the corresponding environmental situations are identified."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to implement quality checking rules specific to observation locations.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to implement quality checking rules specific to observation locations.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QCS",
+      "requirement" : "The QCS shall support the configuration of quality checking rules associated with specific observation locations."
+    }, {
+      "allocation" : "QCS",
+      "requirement" : "The QCS shall retrieve the quality checking rules specific to an observation's location during the quality checking process."
+    }, {
+      "allocation" : "QCS",
+      "requirement" : "The QCS shall execute the retrieved location-specific quality checking rules against the observations received from that location."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to base its quality checking process on historical environmental data.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to base its quality checking process on historical environmental data.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall retrieve historical environmental data relevant to the incoming environmental observations."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall execute quality checking algorithms that utilize the retrieved historical environmental data to evaluate the validity of incoming environmental observations."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to use multiple algorithms for its quality checking process.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to use multiple algorithms for its quality checking process.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall support the integration of multiple distinct quality checking algorithms."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall allow the selection of one or more integrated algorithms to be used during the quality checking process."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall execute the selected algorithms during the quality checking process."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall allow access to new surface transportation-related environmental data.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall allow access to new surface transportation-related environmental data.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS_INGEST",
+      "requirement" : "The CLARUS_INGEST service shall ingest new surface transportation-related environmental data."
+    }, {
+      "allocation" : "CLARUS_DB",
+      "requirement" : "The CLARUS_DB service shall store the ingested surface transportation-related environmental data."
+    }, {
+      "allocation" : "CLARUS_API",
+      "requirement" : "The CLARUS_API service shall provide an interface to retrieve the stored surface transportation-related environmental data."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall enable administrators to manage security groups.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall enable administrators to manage security groups.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLRS",
+      "requirement" : "The Clarus system shall allow administrators to create security groups."
+    }, {
+      "allocation" : "CLRS",
+      "requirement" : "The Clarus system shall allow administrators to retrieve and view security groups."
+    }, {
+      "allocation" : "CLRS",
+      "requirement" : "The Clarus system shall allow administrators to update security groups."
+    }, {
+      "allocation" : "CLRS",
+      "requirement" : "The Clarus system shall allow administrators to delete security groups."
+    }, {
+      "allocation" : "CLRS",
+      "requirement" : "The Clarus system shall restrict access to security group management actions to authenticated administrators."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to restrict environmental data publication based on source.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to restrict environmental data publication based on source.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "PUB",
+      "requirement" : "The Publication Service shall identify the source of incoming environmental data prior to publication."
+    }, {
+      "allocation" : "PUB",
+      "requirement" : "The Publication Service shall evaluate the publication restriction status of the identified data source against a source restriction configuration."
+    }, {
+      "allocation" : "PUB",
+      "requirement" : "The Publication Service shall prevent the publication of environmental data if its source is configured as restricted."
+    }, {
+      "allocation" : "PUB",
+      "requirement" : "The Publication Service shall allow the publication of environmental data if its source is not configured as restricted."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall record statistics about its operation.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall record statistics about its operation.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall collect statistics representing its execution and performance."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall save the collected operational statistics to persistent storage."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall log data transactions.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall log data transactions.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall generate a log entry for each data transaction."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall include the timestamp of execution in each data transaction log entry."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall store the data transaction log entries in persistent storage."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall acquire, process, and disseminate environmental metadata.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall acquire, process, and disseminate environmental metadata.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS-AQ",
+      "requirement" : "The Clarus system shall acquire environmental metadata from external data providers."
+    }, {
+      "allocation" : "CLARUS-PROC",
+      "requirement" : "The Clarus system shall process the acquired environmental metadata to validate its format and quality."
+    }, {
+      "allocation" : "CLARUS-DIS",
+      "requirement" : "The Clarus system shall disseminate the processed environmental metadata to authorized consumers and external systems."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall manage environmental data and metadata according to the Clarus data sharing agreements.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall manage environmental data and metadata according to the Clarus data sharing agreements.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLS",
+      "requirement" : "The Clarus system shall ingest and store environmental data in accordance with the Clarus data sharing agreements."
+    }, {
+      "allocation" : "CLS",
+      "requirement" : "The Clarus system shall ingest and store environmental metadata in accordance with the Clarus data sharing agreements."
+    }, {
+      "allocation" : "CLS",
+      "requirement" : "The Clarus system shall enforce access control constraints on environmental data as defined in the Clarus data sharing agreements."
+    }, {
+      "allocation" : "CLS",
+      "requirement" : "The Clarus system shall enforce access control constraints on environmental metadata as defined in the Clarus data sharing agreements."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall collect, quality check, and disseminate environmental data.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall collect, quality check, and disseminate environmental data.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLS",
+      "requirement" : "The CLS shall collect environmental data."
+    }, {
+      "allocation" : "CLS",
+      "requirement" : "The CLS shall perform quality checks on the collected environmental data."
+    }, {
+      "allocation" : "CLS",
+      "requirement" : "The CLS shall disseminate the checked environmental data."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall provide environmental data quality flags.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall provide environmental data quality flags.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall associate quality flags with each ingested environmental data point."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall deliver the associated quality flags along with the environmental data during data dissemination."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall allow human quality checks of environmental data.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall allow human quality checks of environmental data.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QCUI",
+      "requirement" : "The Clarus system shall provide an interface that displays environmental data to authorized users for manual quality assessment."
+    }, {
+      "allocation" : "QCSVC",
+      "requirement" : "The Clarus system shall provide the capability for authorized users to assign quality control flags to environmental data."
+    }, {
+      "allocation" : "QCDB",
+      "requirement" : "The Clarus system shall store the human-applied quality control flags, the identifier of the reviewer, and the timestamp in the database."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall provide a user interface for administration.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall provide a user interface for administration.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "UI",
+      "requirement" : "The Clarus system shall display a dedicated user interface for administration tasks."
+    }, {
+      "allocation" : "UI",
+      "requirement" : "The administration user interface shall provide navigation and controls to perform administrative functions."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to detect data submission errors.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to detect data submission errors.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLS",
+      "requirement" : "The Clarus system shall validate the format of submitted data to detect syntax errors."
+    }, {
+      "allocation" : "CLS",
+      "requirement" : "The Clarus system shall verify the completeness of submitted data to detect missing required information."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to access in-situ environmental observations from data collectors.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to access in-situ environmental observations from data collectors.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS-CIF",
+      "requirement" : "The Clarus system shall interface with external data collectors to enable observation data retrieval."
+    }, {
+      "allocation" : "CLARUS-OBS",
+      "requirement" : "The Clarus system shall retrieve in-situ environmental observations from the interfaced data collectors."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to access remotely sensed environmental observations from data collectors.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to access remotely sensed environmental observations from data collectors.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "COL",
+      "requirement" : "The COL service shall establish network communication with external data collectors."
+    }, {
+      "allocation" : "COL",
+      "requirement" : "The COL service shall retrieve remotely sensed environmental observations from the connected data collectors."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to receive roadway weather measurements derived from VII data.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to receive roadway weather measurements derived from VII data.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS_RX",
+      "requirement" : "The Clarus system shall provide a data reception interface to receive incoming roadway weather measurements."
+    }, {
+      "allocation" : "CLARUS_RX",
+      "requirement" : "The Clarus system shall accept incoming roadway weather measurements that are derived from Vehicle Infrastructure Integration (VII) data."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data derived from images.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall accept environmental data derived from images.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall provide an interface to receive incoming environmental data."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall accept environmental data that is identified as being derived from image sensors."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to retrieve environmental data directly from environmental sensor station collectors.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to retrieve environmental data directly from environmental sensor station collectors.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS-COLL",
+      "requirement" : "The Clarus collection service shall establish a direct communication channel with environmental sensor station collectors."
+    }, {
+      "allocation" : "CLARUS-COLL",
+      "requirement" : "The Clarus collection service shall retrieve environmental data from the environmental sensor station collectors over the established direct communication channel."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall minimize the time for data acquisition.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall minimize the time for data acquisition.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "DAS",
+      "requirement" : "The DAS shall execute data acquisition processes in parallel across available communication channels."
+    }, {
+      "allocation" : "DAS",
+      "requirement" : "The DAS shall utilize non-blocking I/O operations for all external data acquisition requests."
+    }, {
+      "allocation" : "DAS",
+      "requirement" : "The DAS shall cache successfully acquired data to minimize redundant network requests."
+    }, {
+      "allocation" : "DAS",
+      "requirement" : "The DAS shall terminate any data acquisition request that exceeds a response timeout limit of 5.0 seconds."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall process data as they are received.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall process data as they are received.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLS",
+      "requirement" : "CLS shall detect the receipt of incoming data in real-time."
+    }, {
+      "allocation" : "CLS",
+      "requirement" : "CLS shall initiate the processing of received data immediately upon detection."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall collect pavement-related observations.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall collect pavement-related observations.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "COL",
+      "requirement" : "The COL service shall ingest pavement-related observation data from external environmental sensor interfaces."
+    }, {
+      "allocation" : "COL",
+      "requirement" : "The COL service shall parse the ingested pavement-related observations into a standardized system data format for processing."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from railway systems or in-situ ESS along tracks.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall accept environmental data from railway systems or in-situ ESS along tracks.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLS-ING",
+      "requirement" : "The Clarus system shall accept environmental data transmitted from external railway systems."
+    }, {
+      "allocation" : "CLS-ING",
+      "requirement" : "The Clarus system shall accept environmental data transmitted from in-situ Environmental Sensor Stations (ESS) located along railway tracks."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from railroad vehicles.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall accept environmental data from railroad vehicles.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLS-COM",
+      "requirement" : "The Clarus system shall provide a communication interface to receive environmental data transmitted from railroad vehicles."
+    }, {
+      "allocation" : "CLS-VAL",
+      "requirement" : "The Clarus system shall validate the structure and content of the received environmental data from railroad vehicles."
+    }, {
+      "allocation" : "CLS-STOR",
+      "requirement" : "The Clarus system shall ingest and store valid environmental data received from railroad vehicles in the system repository."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from (roadway) vehicles.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall accept environmental data from (roadway) vehicles.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "DIS",
+      "requirement" : "The DIS shall establish a communication interface to receive data transmissions from roadway vehicles."
+    }, {
+      "allocation" : "DIS",
+      "requirement" : "The DIS shall accept environmental data payloads transmitted by roadway vehicles through the communication interface."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from maintenance and construction vehicles.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall accept environmental data from maintenance and construction vehicles.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall accept environmental data from maintenance vehicles."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall accept environmental data from construction vehicles."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from service patrol vehicles.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall accept environmental data from service patrol vehicles.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "DIS",
+      "requirement" : "The Clarus Data Ingestion Service shall establish communication interfaces to receive transmitted environmental data from service patrol vehicles."
+    }, {
+      "allocation" : "DIS",
+      "requirement" : "The Clarus Data Ingestion Service shall parse and validate the structure of the incoming environmental data received from service patrol vehicles."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from transit vehicles.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall accept environmental data from transit vehicles.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLRS-COMM",
+      "requirement" : "The Clarus system shall provide a communication interface to receive transmissions from transit vehicles."
+    }, {
+      "allocation" : "CLRS-INGEST",
+      "requirement" : "The Clarus system shall accept and ingest environmental data payloads from the received transit vehicle transmissions."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept environmental data from emergency vehicles.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall accept environmental data from emergency vehicles.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall provide a communication interface to receive data transmissions from emergency vehicles."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall parse the received emergency vehicle transmissions to extract environmental data."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to receive weather data from weather service providers.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to receive weather data from weather service providers.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "WDS",
+      "requirement" : "The WDS shall provide an interface to receive incoming weather data from external weather service providers."
+    }, {
+      "allocation" : "WDS",
+      "requirement" : "The WDS shall ingest the weather data payloads received from external weather service providers."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system baseline data types shall be defined by the NTCIP ESS 1204 standard.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system baseline data types shall be defined by the NTCIP ESS 1204 standard.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "SYS",
+      "requirement" : "The Clarus system baseline data types shall conform to the data definitions specified in the NTCIP ESS 1204 standard."
+    }, {
+      "allocation" : "SYS",
+      "requirement" : "The Clarus system shall enforce the value ranges and constraints defined in the NTCIP ESS 1204 standard for all baseline data types."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system data definitions shall be consistent with the ITE TM 1.03 standard, Functional Level Traffic Management Data Dictionary (TMDD).",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system data definitions shall be consistent with the ITE TM 1.03 standard, Functional Level Traffic Management Data Dictionary (TMDD).\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CDS",
+      "requirement" : "The CDS database schema shall define traffic management data elements using the naming conventions specified in the ITE TM 1.03 TMDD standard."
+    }, {
+      "allocation" : "CDS",
+      "requirement" : "The CDS data representations shall use the data types and value ranges defined in the ITE TM 1.03 TMDD standard for all represented traffic management data elements."
+    }, {
+      "allocation" : "CDS",
+      "requirement" : "The CDS external data exchange interfaces shall structure traffic management messages in accordance with the data definitions specified in the ITE TM 1.03 TMDD standard."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept only observations that include location, timestamp, and source metadata.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall accept only observations that include location, timestamp, and source metadata.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLRS",
+      "requirement" : "The Clarus system shall reject received observations that do not contain location metadata."
+    }, {
+      "allocation" : "CLRS",
+      "requirement" : "The Clarus system shall reject received observations that do not contain timestamp metadata."
+    }, {
+      "allocation" : "CLRS",
+      "requirement" : "The Clarus system shall reject received observations that do not contain source metadata."
+    }, {
+      "allocation" : "CLRS",
+      "requirement" : "The Clarus system shall accept received observations that contain location, timestamp, and source metadata."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept only observations of identified measurement types and units.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall accept only observations of identified measurement types and units.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "OBS",
+      "requirement" : "The OBS service shall verify that each incoming observation contains a measurement type matching an identified measurement type in the system configuration."
+    }, {
+      "allocation" : "OBS",
+      "requirement" : "The OBS service shall verify that each incoming observation contains a unit matching an identified unit in the system configuration."
+    }, {
+      "allocation" : "OBS",
+      "requirement" : "The OBS service shall reject any incoming observation that contains an unidentified measurement type."
+    }, {
+      "allocation" : "OBS",
+      "requirement" : "The OBS service shall reject any incoming observation that contains an unidentified unit."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to acquire, process, and disseminate environmental data from across North America.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to acquire, process, and disseminate environmental data from across North America.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "DAS",
+      "requirement" : "The DAS shall acquire environmental data from sources across North America."
+    }, {
+      "allocation" : "DPS",
+      "requirement" : "The DPS shall process the acquired North American environmental data."
+    }, {
+      "allocation" : "DDS",
+      "requirement" : "The DDS shall disseminate the processed North American environmental data."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall accept data through a Clarus standard interface.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall accept data through a Clarus standard interface.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CSI",
+      "requirement" : "The Clarus standard interface shall provide the communication endpoints defined in the Clarus interface specification to receive incoming data."
+    }, {
+      "allocation" : "CLS",
+      "requirement" : "The Clarus system shall ingest data payloads received through the Clarus standard interface."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to communicate with environmental sensor stations through its collector using the NTCIP ESS 1204.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to communicate with environmental sensor stations through its collector using the NTCIP ESS 1204.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "COL",
+      "requirement" : "The collector shall establish and maintain communication connections with environmental sensor stations."
+    }, {
+      "allocation" : "COL",
+      "requirement" : "The collector shall exchange data with environmental sensor stations using the NTCIP ESS 1204 protocol."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to communicate with RWIS databases through their native interfaces.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to communicate with RWIS databases through their native interfaces.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "DCS",
+      "requirement" : "The Data Collection Subsystem (DCS) shall establish network connections to external Road Weather Information System (RWIS) databases utilizing their native communication protocols."
+    }, {
+      "allocation" : "DCS",
+      "requirement" : "The Data Collection Subsystem (DCS) shall query RWIS databases for environmental data using the native query languages or API methods defined by each respective RWIS database vendor."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall transfer data as efficiently as possible.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall transfer data as efficiently as possible.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall compress data payloads prior to transmission to minimize bandwidth usage."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall utilize a data transfer protocol that minimizes packet overhead."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall employ industry standards to minimize implementation impact to users and providers.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall employ industry standards to minimize implementation impact to users and providers.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall use industry-standard communication protocols for all external data exchanges with users and providers."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall use industry-standard data representation formats for all external interfaces with users and providers."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to automatically recover from an unexpected shutdown.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to automatically recover from an unexpected shutdown.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "SYS-BOOT",
+      "requirement" : "During the boot sequence, the Boot Manager shall check the system state indicator to determine if the previous shutdown was improper."
+    }, {
+      "allocation" : "REC-MGR",
+      "requirement" : "If the Boot Manager determines the previous shutdown was improper, the Recovery Manager shall automatically trigger the system recovery process."
+    }, {
+      "allocation" : "REC-MGR",
+      "requirement" : "The Recovery Manager shall restore system configuration and application state parameters to their last saved valid state during the recovery process."
+    }, {
+      "allocation" : "LOG-SRV",
+      "requirement" : "The Logging Service shall log the occurrence of the unexpected shutdown and the completion status of the recovery process."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall disseminate environmental metadata in response to polling.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall disseminate environmental metadata in response to polling.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall accept incoming polling requests for environmental metadata."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall retrieve the environmental metadata corresponding to a received polling request."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall transmit the retrieved environmental metadata to the requesting client in response to the poll."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall disseminate data using standard Internet protocols.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall disseminate data using standard Internet protocols.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLRS",
+      "requirement" : "The CLRS shall support data dissemination over Transmission Control Protocol/Internet Protocol (TCP/IP) network connections."
+    }, {
+      "allocation" : "CLRS",
+      "requirement" : "The CLRS shall support data dissemination using the Hypertext Transfer Protocol (HTTP)."
+    }, {
+      "allocation" : "CLRS",
+      "requirement" : "The CLRS shall support data dissemination using the File Transfer Protocol (FTP)."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to provide sensor equipment metadata in response to a request.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to provide sensor equipment metadata in response to a request.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall accept incoming requests for sensor equipment metadata."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall provide the requested sensor equipment metadata in response to a valid request."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall minimize the time for data dissemination.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall minimize the time for data dissemination.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CDS",
+      "requirement" : "The Clarus Dissemination Service shall initiate the transmission of data to registered subscribers within 100 milliseconds of the data being ingested."
+    }, {
+      "allocation" : "CDS",
+      "requirement" : "The Clarus Dissemination Service shall process dissemination queues concurrently to prevent single-channel blocking."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall respond to queries for environmental metadata from the available metadata.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall respond to queries for environmental metadata from the available metadata.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "MDS",
+      "requirement" : "The MDS shall receive queries requesting environmental metadata."
+    }, {
+      "allocation" : "MDS",
+      "requirement" : "The MDS shall retrieve environmental metadata matching the query parameters from the store of available metadata."
+    }, {
+      "allocation" : "MDS",
+      "requirement" : "The MDS shall transmit the retrieved environmental metadata as the query response."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall respond to a request for information within five minutes.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall respond to a request for information within five minutes.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CRS",
+      "requirement" : "The CRS shall transmit a response to a request for information within 300 seconds of receiving the request."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall maintain a dynamic library of data for at least seven days.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall maintain a dynamic library of data for at least seven days.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLS",
+      "requirement" : "The CLS shall maintain a dynamic library of data allowing for continuous updates."
+    }, {
+      "allocation" : "CLS",
+      "requirement" : "The CLS shall retain all data in the dynamic library for a minimum of seven days (168 hours) from the time of creation."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall allow service providers to select specific desired data sets.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall allow service providers to select specific desired data sets.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall display a list of available data sets to service providers."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall allow service providers to select specific desired data sets from the list of available data sets."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall store the data set selections made by the service provider."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall respond to queries for environmental data from the available data.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall respond to queries for environmental data from the available data.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall receive queries requesting environmental data."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall retrieve the requested environmental data from the available dataset."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall return the retrieved environmental data to the originator of the query."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall support 470 million current observations.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall support 470 million current observations.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "DBS",
+      "requirement" : "The DBS shall provide storage capacity to maintain at least 470 million concurrent current observation records."
+    }, {
+      "allocation" : "DBS",
+      "requirement" : "The DBS shall support database queries and updates on a dataset of up to 470 million active observation records."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall disseminate data in response to a scheduled request.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall disseminate data in response to a scheduled request.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CDS",
+      "requirement" : "The CDS shall detect the trigger of a scheduled data dissemination request."
+    }, {
+      "allocation" : "CDS",
+      "requirement" : "The CDS shall transmit the requested data to the designated destination in response to the triggered scheduled request."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall disseminate environmental data in response to polling.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall disseminate environmental data in response to polling.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall receive polling requests for environmental data."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall retrieve the environmental data specified in the received polling request."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall transmit the retrieved environmental data to the requesting entity."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall disseminate data in response to a change notification request.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall disseminate data in response to a change notification request.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CDS",
+      "requirement" : "The CDS shall receive change notification requests from the Clarus system."
+    }, {
+      "allocation" : "CDS",
+      "requirement" : "The CDS shall disseminate the associated data to the designated recipients upon receipt of a valid change notification request."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to notify subscribers when data sets become available.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to notify subscribers when data sets become available.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CNS",
+      "requirement" : "The CNS shall detect when a data set becomes available within the Clarus system."
+    }, {
+      "allocation" : "CNS",
+      "requirement" : "The CNS shall identify the subscribers associated with the available data set."
+    }, {
+      "allocation" : "CNS",
+      "requirement" : "The CNS shall send a notification to each identified subscriber when the data set becomes available."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall provide notification of data quality conditions to data contributors.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall provide notification of data quality conditions to data contributors.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CNS",
+      "requirement" : "CNS shall detect data quality conditions that require notification."
+    }, {
+      "allocation" : "CNS",
+      "requirement" : "CNS shall identify the data contributor associated with the data that triggered the data quality condition."
+    }, {
+      "allocation" : "CNS",
+      "requirement" : "CNS shall generate a notification containing the details of the data quality condition."
+    }, {
+      "allocation" : "CNS",
+      "requirement" : "CNS shall transmit the generated notification to the identified data contributor."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall enable quality managers to review which quality checks passed or failed.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall enable quality managers to review which quality checks passed or failed.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS-UI",
+      "requirement" : "The user interface shall present a list of executed quality checks to users logged in with the quality manager role."
+    }, {
+      "allocation" : "CLARUS-UI",
+      "requirement" : "The user interface shall display a passed status indicator for each quality check that completed successfully."
+    }, {
+      "allocation" : "CLARUS-UI",
+      "requirement" : "The user interface shall display a failed status indicator for each quality check that did not complete successfully."
+    }, {
+      "allocation" : "CLARUS-QS",
+      "requirement" : "The quality service shall retrieve the execution history and status outcomes of all quality checks to populate the quality manager review interface."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall disseminate NWS watches, warnings, and advisories.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall disseminate NWS watches, warnings, and advisories.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall disseminate National Weather Service (NWS) watches."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall disseminate National Weather Service (NWS) warnings."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall disseminate National Weather Service (NWS) advisories."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to disseminate data based on spatial queries.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to disseminate data based on spatial queries.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall accept spatial queries containing geographic coordinates defining an area of interest."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall identify and retrieve stored data that falls within the geographic boundaries specified by the spatial query."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall transmit the retrieved spatial-specific data to the requesting client."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall enable environmental data queries by timestamp.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall enable environmental data queries by timestamp.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLS-API",
+      "requirement" : "The CLS-API shall accept environmental data query requests that specify a target timestamp parameter."
+    }, {
+      "allocation" : "CLS-QRY",
+      "requirement" : "The CLS-QRY shall retrieve environmental data records from the datastore that match the specified timestamp parameter."
+    }, {
+      "allocation" : "CLS-API",
+      "requirement" : "The CLS-API shall return the retrieved environmental data associated with the specified timestamp to the requesting client."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall enable environmental data queries by location reference.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall enable environmental data queries by location reference.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "EQS",
+      "requirement" : "The EQS shall accept a location reference as a query parameter for environmental data requests."
+    }, {
+      "allocation" : "EQS",
+      "requirement" : "The EQS shall retrieve environmental data that matches the specified location reference."
+    }, {
+      "allocation" : "EQS",
+      "requirement" : "The EQS shall return the retrieved environmental data to the requesting client."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall enable environmental data queries by quality.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall enable environmental data queries by quality.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "DQS",
+      "requirement" : "The Data Query Service shall accept environmental data query requests containing a quality filter parameter."
+    }, {
+      "allocation" : "DQS",
+      "requirement" : "The Data Query Service shall filter environmental data based on the quality level specified in the query request."
+    }, {
+      "allocation" : "DQS",
+      "requirement" : "The Data Query Service shall return only the environmental data that meets the specified quality filter criteria."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall enable environmental data queries by source.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall enable environmental data queries by source.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLS",
+      "requirement" : "The Clarus system shall provide an interface that accepts a data source identifier as a search criterion for environmental data queries."
+    }, {
+      "allocation" : "CLS",
+      "requirement" : "The Clarus system shall query the data store for environmental data associated with the specified data source identifier."
+    }, {
+      "allocation" : "CLS",
+      "requirement" : "The Clarus system shall return the environmental data matching the specified data source identifier to the requester."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall allow users to create a data subscription request.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall allow users to create a data subscription request.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "UI",
+      "requirement" : "The UI shall display a form allowing the user to input details required for a new data subscription request."
+    }, {
+      "allocation" : "API",
+      "requirement" : "The API shall expose an endpoint to accept the creation of a data subscription request."
+    }, {
+      "allocation" : "API",
+      "requirement" : "The API shall validate the submitted data subscription request parameters for completeness and correctness."
+    }, {
+      "allocation" : "DB",
+      "requirement" : "The DB shall persist the validated data subscription request record."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to publish new data within twenty minutes of data receipt.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to publish new data within twenty minutes of data receipt.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLS",
+      "requirement" : "The CLS shall record the timestamp of receipt when new data is received."
+    }, {
+      "allocation" : "CLS",
+      "requirement" : "The CLS shall publish the received data."
+    }, {
+      "allocation" : "CLS",
+      "requirement" : "The CLS shall complete the publication of the received data within 20 minutes of the recorded receipt timestamp."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to handle three hundred simultaneous requests for environmental data.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to handle three hundred simultaneous requests for environmental data.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall accept up to 300 simultaneous incoming requests for environmental data."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The Clarus system shall process up to 300 simultaneous environmental data requests concurrently."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall detect out of range values.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall detect out of range values.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall detect when an input value is below the minimum defined threshold."
+    }, {
+      "allocation" : "CLARUS",
+      "requirement" : "The CLARUS system shall detect when an input value is above the maximum defined threshold."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall not modify original observations.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall not modify original observations.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS-STORAGE",
+      "requirement" : "The Clarus storage subsystem shall persist ingested original observations without altering any of their values or metadata."
+    }, {
+      "allocation" : "CLARUS-PROCESSOR",
+      "requirement" : "The Clarus processing subsystem shall store all quality control results and derived data as separate records, leaving the original observations unmodified."
+    }, {
+      "allocation" : "CLARUS-DB",
+      "requirement" : "The Clarus database subsystem shall enforce read-only access permissions on stored original observations to prevent any modifications after ingestion."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to implement quality checking spatial tests using available data.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to implement quality checking spatial tests using available data.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QCS",
+      "requirement" : "The QCS shall retrieve available spatial data for quality checking."
+    }, {
+      "allocation" : "QCS",
+      "requirement" : "The QCS shall execute spatial quality checking tests on the retrieved data."
+    }, {
+      "allocation" : "QCS",
+      "requirement" : "The QCS shall log the results of the spatial quality checking tests."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to base its quality checking process on values from multiple observations.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to base its quality checking process on values from multiple observations.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "QCS",
+      "requirement" : "The QCS shall retrieve multiple spatial or temporal observation values required to execute multi-observation quality control algorithms."
+    }, {
+      "allocation" : "QCS",
+      "requirement" : "The QCS shall execute quality control algorithms that use the retrieved multiple observation values to determine the quality flags for a target observation."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to base its quality checking process on values distributed in time.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to base its quality checking process on values distributed in time.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CS",
+      "requirement" : "The CS shall retrieve historical data values distributed over a specified time interval for the quality checking process."
+    }, {
+      "allocation" : "CS",
+      "requirement" : "The CS shall evaluate the retrieved time-distributed data values against predefined temporal quality checking rules."
+    } ]
+  }
+}, {
+  "high_level_requirement" : "The Clarus system shall be able to complete an automated quality checking check of environmental data within ten seconds of data receipt.",
+  "prompt_style" : "panacea_run1",
+  "optimized_prompt_source" : "results/experiment/panacea1/gemini_panacea1_clarus.json",
+  "prompt" : "Create low-level requirements for the following high-level requirement.\n\nReturn JSON only, with no Markdown or explanatory prose, using exactly this schema:\n{\"low_level_requirements\":[{\"allocation\":\"service acronym\",\"requirement\":\"requirement text\"}]}\nHigh-level requirement:\nThe Clarus system shall be able to complete an automated quality checking check of environmental data within ten seconds of data receipt.\nPrompt refinement guidance:\n- Cover every distinct behavior, condition, and constraint expressed by the HLR.\n- Do not add capabilities, technologies, constraints, or subsystem behavior not justified by the HLR.\n- Generate as many LLRs as necessary; do not force exactly one LLR when the HLR contains multiple responsibilities.\n- Split compound requirements into separate atomic, testable LLRs when they describe different responsibilities.\n- Keep the prompt stable when the prediction already matches the reference well.",
+  "response" : {
+    "low_level_requirements" : [ {
+      "allocation" : "CLARUS-QAC",
+      "requirement" : "The CLARUS-QAC shall initiate the automated quality checking process immediately upon the receipt of environmental data."
+    }, {
+      "allocation" : "CLARUS-QAC",
+      "requirement" : "The CLARUS-QAC shall execute automated quality checks on the received environmental data."
+    }, {
+      "allocation" : "CLARUS-QAC",
+      "requirement" : "The CLARUS-QAC shall complete the execution of the automated quality checks within 10 seconds of the environmental data receipt."
+    } ]
+  }
+} ]

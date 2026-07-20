@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.7.0" timestamp="2026-07-18T07:41:20.908">
+<file name="/Users/elise/Documents/MASTER/src/main/java/evaluation/EvaluationResponseValidator.java">
+<violation beginline="21" endline="21" begincolumn="21" endcolumn="29" rule="CyclomaticComplexity" ruleset="Design" package="evaluation" class="EvaluationResponseValidator" method="validate" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'validate(String)' has a cyclomatic complexity of 21.
+</violation>
+</file>
+<file name="/Users/elise/Documents/MASTER/src/main/java/experiment/core/ExperimentHandler.java">
+<violation beginline="48" endline="48" begincolumn="27" endcolumn="39" rule="CyclomaticComplexity" ruleset="Design" package="experiment.core" class="ExperimentHandler" method="selectPrompt" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The method 'selectPrompt(String)' has a cyclomatic complexity of 26.
+</violation>
+</file>
+<file name="/Users/elise/Documents/MASTER/src/main/java/experiment/rag/SqliteRagIndex.java">
+<violation beginline="22" endline="22" begincolumn="14" endcolumn="19" rule="CyclomaticComplexity" ruleset="Design" package="experiment.rag" class="SqliteRagIndex" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#cyclomaticcomplexity" priority="3">
+The class 'SqliteRagIndex' has a total cyclomatic complexity of 96 (highest 13).
+</violation>
+</file>
+</pmd>

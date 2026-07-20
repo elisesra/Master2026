@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: experiment.core.DataHandlerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s -- in experiment.core.DataHandlerTest

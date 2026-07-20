@@ -1,0 +1,4347 @@
+[
+  {
+    "id": "F-101",
+    "llrid": [
+      "F-101B1",
+      "F-101H1",
+      "F-101H2",
+      "F-101H3",
+      "F-101K1"
+    ],
+    "high level requirement": "The Clarus system shall implement quality checking processes as soon as data become available.",
+    "Allocation": [
+      "CAS",
+      "QChS",
+      "SS"
+    ],
+    "low level requirement": [
+      "The CAS shall be able to configure schedules for executing QChS.",
+      "QChS shall be able to be configured individually.",
+      "QChS processing order shall be able to be configured.",
+      "QChS processing shall commence when new data arrives but no less frequently than the scheduled interval.",
+      "The SS shall be able to initiate QChS."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "F-101",
+          "text": "The Clarus system shall implement quality checking processes as soon as data become available."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-101B1",
+            "text": "The CAS shall be able to configure schedules for executing QChS."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-101",
+          "text": "The Clarus system shall implement quality checking processes as soon as data become available."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-101H1",
+            "text": "QChS shall be able to be configured individually."
+          },
+          {
+            "id": "F-101H2",
+            "text": "QChS processing order shall be able to be configured."
+          },
+          {
+            "id": "F-101H3",
+            "text": "QChS processing shall commence when new data arrives but no less frequently than the scheduled interval."
+          }
+        ]
+      },
+      "SS": {
+        "high_level_requirement": {
+          "id": "F-101",
+          "text": "The Clarus system shall implement quality checking processes as soon as data become available."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-101K1",
+            "text": "The SS shall be able to initiate QChS."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-151",
+    "llrid": [
+      "F-151B1",
+      "F-151H1"
+    ],
+    "high level requirement": "The Clarus system shall record the methods applied when deriving quality checking information.",
+    "Allocation": [
+      "CAS",
+      "QChS"
+    ],
+    "low level requirement": [
+      "The CAS shall record the quality checking methods used.",
+      "QChS shall indicate when a quality check has been performed."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "F-151",
+          "text": "The Clarus system shall record the methods applied when deriving quality checking information."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-151B1",
+            "text": "The CAS shall record the quality checking methods used."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-151",
+          "text": "The Clarus system shall record the methods applied when deriving quality checking information."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-151H1",
+            "text": "QChS shall indicate when a quality check has been performed."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-155",
+    "llrid": [
+      "F-155B1",
+      "F-155B2",
+      "F-155C1",
+      "F-155H1"
+    ],
+    "high level requirement": "The Clarus system shall be able to implement quality checking rules for each environmental parameter.",
+    "Allocation": [
+      "CAS",
+      "CAUI",
+      "QChS"
+    ],
+    "low level requirement": [
+      "The CAS shall be able to configure the quality checking rules for each environmental parameter.",
+      "The CAS shall enable administrators to manage quality checking rules.",
+      "The CAUI shall enable quality checking rules to be configured specific to each environmental parameter.",
+      "QChS shall be able to implement quality checking rules for a specific environmental parameter."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "F-155",
+          "text": "The Clarus system shall be able to implement quality checking rules for each environmental parameter."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-155B1",
+            "text": "The CAS shall be able to configure the quality checking rules for each environmental parameter."
+          },
+          {
+            "id": "F-155B2",
+            "text": "The CAS shall enable administrators to manage quality checking rules."
+          }
+        ]
+      },
+      "CAUI": {
+        "high_level_requirement": {
+          "id": "F-155",
+          "text": "The Clarus system shall be able to implement quality checking rules for each environmental parameter."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-155C1",
+            "text": "The CAUI shall enable quality checking rules to be configured specific to each environmental parameter."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-155",
+          "text": "The Clarus system shall be able to implement quality checking rules for each environmental parameter."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-155H1",
+            "text": "QChS shall be able to implement quality checking rules for a specific environmental parameter."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-161",
+    "llrid": [
+      "F-161B1",
+      "F-161H1"
+    ],
+    "high level requirement": "The Clarus system shall be able to implement quality checking rules for specific environmental situations.",
+    "Allocation": [
+      "CAS",
+      "QChS"
+    ],
+    "low level requirement": [
+      "The CAS shall be able to configure quality checking rules for specific environmental situations.",
+      "QChS shall be able to implement quality checking rules for specific environmental situations."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "F-161",
+          "text": "The Clarus system shall be able to implement quality checking rules for specific environmental situations."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-161B1",
+            "text": "The CAS shall be able to configure quality checking rules for specific environmental situations."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-161",
+          "text": "The Clarus system shall be able to implement quality checking rules for specific environmental situations."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-161H1",
+            "text": "QChS shall be able to implement quality checking rules for specific environmental situations."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-163",
+    "llrid": [
+      "F-163B1",
+      "F-163H1"
+    ],
+    "high level requirement": "The Clarus system shall be able to implement quality checking rules specific to observation locations.",
+    "Allocation": [
+      "CAS",
+      "QChS"
+    ],
+    "low level requirement": [
+      "The CAS shall be able to configure quality checking rules specific to observation locations.",
+      "QChS shall be able to implement different quality checking rules specific to regional weather."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "F-163",
+          "text": "The Clarus system shall be able to implement quality checking rules specific to observation locations."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-163B1",
+            "text": "The CAS shall be able to configure quality checking rules specific to observation locations."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-163",
+          "text": "The Clarus system shall be able to implement quality checking rules specific to observation locations."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-163H1",
+            "text": "QChS shall be able to implement different quality checking rules specific to regional weather."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-171",
+    "llrid": [
+      "F-171B1",
+      "F-171H1"
+    ],
+    "high level requirement": "The Clarus system shall be able to base its quality checking process on historical environmental data.",
+    "Allocation": [
+      "CAS",
+      "QChS"
+    ],
+    "low level requirement": [
+      "The CAS shall be able to configure historical environmental data to be used by quality checking processes.",
+      "QChS shall be able to use historical environmental data in their quality checking algorithms."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "F-171",
+          "text": "The Clarus system shall be able to base its quality checking process on historical environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-171B1",
+            "text": "The CAS shall be able to configure historical environmental data to be used by quality checking processes."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-171",
+          "text": "The Clarus system shall be able to base its quality checking process on historical environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-171H1",
+            "text": "QChS shall be able to use historical environmental data in their quality checking algorithms."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-175",
+    "llrid": [
+      "F-175B1",
+      "F-175H1"
+    ],
+    "high level requirement": "The Clarus system shall be able to use multiple algorithms for its quality checking process.",
+    "Allocation": [
+      "CAS",
+      "QChS"
+    ],
+    "low level requirement": [
+      "The CAS shall be able to configure multiple algorithms to be used in the quality checking process.",
+      "QChS shall be implemented for each defined standard quality checking algorithm."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "F-175",
+          "text": "The Clarus system shall be able to use multiple algorithms for its quality checking process."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-175B1",
+            "text": "The CAS shall be able to configure multiple algorithms to be used in the quality checking process."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-175",
+          "text": "The Clarus system shall be able to use multiple algorithms for its quality checking process."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-175H1",
+            "text": "QChS shall be implemented for each defined standard quality checking algorithm."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-213",
+    "llrid": [
+      "F-213B1",
+      "F-213D1",
+      "F-213G1",
+      "F-213E1",
+      "F-213F1",
+      "F-213I1",
+      "F-213J1",
+      "F-213H1"
+    ],
+    "high level requirement": "The Clarus system shall allow access to new surface transportation-related environmental data.",
+    "Allocation": [
+      "CAS",
+      "CS",
+      "DOG",
+      "EMC",
+      "EMS",
+      "QEDC",
+      "QEDS",
+      "QChS"
+    ],
+    "low level requirement": [
+      "The CAS shall be configurable to allow new observation types to be implemented as they become available.",
+      "CS shall be able to be implemented to collect new observation types as they become available.",
+      "The DOG shall be able to monitor new environmental data services as they are added.",
+      "The EMC shall be configurable to allow new observation types to be implemented as they become available.",
+      "The Clarus system shall allow new EMS to be implemented that disseminate new observation types to be implemented as they become available.",
+      "The QEDC shall be configurable to allow new observation types to be implemented as they become available.",
+      "QEDS shall be able to disseminate new observation types as they become available.",
+      "QChS shall be implemented to quality check new observation types as they become available."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "F-213",
+          "text": "The Clarus system shall allow access to new surface transportation-related environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-213B1",
+            "text": "The CAS shall be configurable to allow new observation types to be implemented as they become available."
+          }
+        ]
+      },
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-213",
+          "text": "The Clarus system shall allow access to new surface transportation-related environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-213D1",
+            "text": "CS shall be able to be implemented to collect new observation types as they become available."
+          }
+        ]
+      },
+      "DOG": {
+        "high_level_requirement": {
+          "id": "F-213",
+          "text": "The Clarus system shall allow access to new surface transportation-related environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-213G1",
+            "text": "The DOG shall be able to monitor new environmental data services as they are added."
+          }
+        ]
+      },
+      "EMC": {
+        "high_level_requirement": {
+          "id": "F-213",
+          "text": "The Clarus system shall allow access to new surface transportation-related environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-213E1",
+            "text": "The EMC shall be configurable to allow new observation types to be implemented as they become available."
+          }
+        ]
+      },
+      "EMS": {
+        "high_level_requirement": {
+          "id": "F-213",
+          "text": "The Clarus system shall allow access to new surface transportation-related environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-213F1",
+            "text": "The Clarus system shall allow new EMS to be implemented that disseminate new observation types to be implemented as they become available."
+          }
+        ]
+      },
+      "QEDC": {
+        "high_level_requirement": {
+          "id": "F-213",
+          "text": "The Clarus system shall allow access to new surface transportation-related environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-213I1",
+            "text": "The QEDC shall be configurable to allow new observation types to be implemented as they become available."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "F-213",
+          "text": "The Clarus system shall allow access to new surface transportation-related environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-213J1",
+            "text": "QEDS shall be able to disseminate new observation types as they become available."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-213",
+          "text": "The Clarus system shall allow access to new surface transportation-related environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-213H1",
+            "text": "QChS shall be implemented to quality check new observation types as they become available."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-806",
+    "llrid": [
+      "F-806B1",
+      "F-806B2",
+      "F-806B3",
+      "F-806C1"
+    ],
+    "high level requirement": "The Clarus system shall enable administrators to manage security groups.",
+    "Allocation": [
+      "CAS",
+      "CAUI"
+    ],
+    "low level requirement": [
+      "The CAS system shall enable administrators to manage security group members.",
+      "The CAS shall have an administrator security group.",
+      "The CAS shall have a quality manager security group.",
+      "The CAUI shall enable administrators to manage security group members."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "F-806",
+          "text": "The Clarus system shall enable administrators to manage security groups."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-806B1",
+            "text": "The CAS system shall enable administrators to manage security group members."
+          },
+          {
+            "id": "F-806B2",
+            "text": "The CAS shall have an administrator security group."
+          },
+          {
+            "id": "F-806B3",
+            "text": "The CAS shall have a quality manager security group."
+          }
+        ]
+      },
+      "CAUI": {
+        "high_level_requirement": {
+          "id": "F-806",
+          "text": "The Clarus system shall enable administrators to manage security groups."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-806C1",
+            "text": "The CAUI shall enable administrators to manage security group members."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-811",
+    "llrid": [
+      "F-811B1",
+      "F-811J1"
+    ],
+    "high level requirement": "The Clarus system shall be able to restrict environmental data publication based on source.",
+    "Allocation": [
+      "CAS",
+      "QEDS"
+    ],
+    "low level requirement": [
+      "The CAS shall be able to record data sharing restrictions.",
+      "QEDS shall be able to determine if an observation can be disseminated."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "F-811",
+          "text": "The Clarus system shall be able to restrict environmental data publication based on source."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-811B1",
+            "text": "The CAS shall be able to record data sharing restrictions."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "F-811",
+          "text": "The Clarus system shall be able to restrict environmental data publication based on source."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-811J1",
+            "text": "QEDS shall be able to determine if an observation can be disseminated."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-901",
+    "llrid": [
+      "F-901B1"
+    ],
+    "high level requirement": "The Clarus system shall record statistics about its operation.",
+    "Allocation": [
+      "CAS"
+    ],
+    "low level requirement": [
+      "The CAS shall record statistics about the system operation."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "F-901",
+          "text": "The Clarus system shall record statistics about its operation."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-901B1",
+            "text": "The CAS shall record statistics about the system operation."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-905",
+    "llrid": [
+      "F-905B1",
+      "F-905D1",
+      "F-905G1",
+      "F-905F1",
+      "F-905J1",
+      "F-905H1",
+      "F-905K1"
+    ],
+    "high level requirement": "The Clarus system shall log data transactions.",
+    "Allocation": [
+      "CAS",
+      "CS",
+      "DOG",
+      "EMS",
+      "QEDS",
+      "QChS",
+      "SS"
+    ],
+    "low level requirement": [
+      "The CAS shall log data transactions.",
+      "CS shall create a log entry when a data set is invalid.",
+      "The DOG shall be able to record its activities.",
+      "EMS shall log metadata transactions.",
+      "QEDS shall log their activities.",
+      "QChS shall log quality checking activity.",
+      "The SS shall record when it initiates actions."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "F-905",
+          "text": "The Clarus system shall log data transactions."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-905B1",
+            "text": "The CAS shall log data transactions."
+          }
+        ]
+      },
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-905",
+          "text": "The Clarus system shall log data transactions."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-905D1",
+            "text": "CS shall create a log entry when a data set is invalid."
+          }
+        ]
+      },
+      "DOG": {
+        "high_level_requirement": {
+          "id": "F-905",
+          "text": "The Clarus system shall log data transactions."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-905G1",
+            "text": "The DOG shall be able to record its activities."
+          }
+        ]
+      },
+      "EMS": {
+        "high_level_requirement": {
+          "id": "F-905",
+          "text": "The Clarus system shall log data transactions."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-905F1",
+            "text": "EMS shall log metadata transactions."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "F-905",
+          "text": "The Clarus system shall log data transactions."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-905J1",
+            "text": "QEDS shall log their activities."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-905",
+          "text": "The Clarus system shall log data transactions."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-905H1",
+            "text": "QChS shall log quality checking activity."
+          }
+        ]
+      },
+      "SS": {
+        "high_level_requirement": {
+          "id": "F-905",
+          "text": "The Clarus system shall log data transactions."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-905K1",
+            "text": "The SS shall record when it initiates actions."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "H-120",
+    "llrid": [
+      "H-120B1",
+      "H-120B2",
+      "H-120B3",
+      "H-120B4",
+      "H-120B5",
+      "H-120C1",
+      "H-120C2",
+      "H-120E1",
+      "H-120E2",
+      "H-120E3",
+      "H-120E4",
+      "H-120E5",
+      "H-120E6",
+      "H-120E7",
+      "H-120E8",
+      "H-120E9",
+      "H-120F1",
+      "H-120F2",
+      "H-120F3",
+      "H-120F4"
+    ],
+    "high level requirement": "The Clarus system shall acquire, process, and disseminate environmental metadata.",
+    "Allocation": [
+      "CAS",
+      "CAUI",
+      "EMC",
+      "EMS"
+    ],
+    "low level requirement": [
+      "The CAS shall manage contributor metadata.",
+      "The CAS shall manage collector metadata.",
+      "The CAS shall manage quality checking schedules.",
+      "The CAS shall manage environmental data collection schedules.",
+      "The CAS shall manage ESS metadata.",
+      "The CAUI shall enable administrators to acquire environmental metadata.",
+      "The CAUI shall enable administrators to manage environmental metadata.",
+      "The EMC shall be able to process environmental metadata.",
+      "The EMC shall be able to uniquely identify each contributor, collector, and station sensor.",
+      "The EMC shall be able to maintain contact info for each contributor, collector, and station sensor.",
+      "The EMC shall be able to maintain backup contact info for each contributor, collector, and station sensor.",
+      "The EMC shall be able to maintain owner names for each contributor, collector, and station sensor.",
+      "The EMC shall be able to maintain an equipment list for each station.",
+      "The EMC shall be able to maintain pavement types for stations with corresponding instrumentation.",
+      "The EMC shall be able to maintain latitude, longitude, and elevation for stations.",
+      "The EMC shall be able to maintain a reference to additional metadata.",
+      "The EMS shall accept source queries that consist of a list of Clarus contributors.",
+      "The EMS shall accept source queries that consist of a list of Clarus contributors including station identifier.",
+      "The EMS shall accept location queries based on a bounding latitude/longitude coordinate pair.",
+      "The EMS shall accept location queries based on latitude/longitude location and radius."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "H-120",
+          "text": "The Clarus system shall acquire, process, and disseminate environmental metadata."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-120B1",
+            "text": "The CAS shall manage contributor metadata."
+          },
+          {
+            "id": "H-120B2",
+            "text": "The CAS shall manage collector metadata."
+          },
+          {
+            "id": "H-120B3",
+            "text": "The CAS shall manage quality checking schedules."
+          },
+          {
+            "id": "H-120B4",
+            "text": "The CAS shall manage environmental data collection schedules."
+          },
+          {
+            "id": "H-120B5",
+            "text": "The CAS shall manage ESS metadata."
+          }
+        ]
+      },
+      "CAUI": {
+        "high_level_requirement": {
+          "id": "H-120",
+          "text": "The Clarus system shall acquire, process, and disseminate environmental metadata."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-120C1",
+            "text": "The CAUI shall enable administrators to acquire environmental metadata."
+          },
+          {
+            "id": "H-120C2",
+            "text": "The CAUI shall enable administrators to manage environmental metadata."
+          }
+        ]
+      },
+      "EMC": {
+        "high_level_requirement": {
+          "id": "H-120",
+          "text": "The Clarus system shall acquire, process, and disseminate environmental metadata."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-120E1",
+            "text": "The EMC shall be able to process environmental metadata."
+          },
+          {
+            "id": "H-120E2",
+            "text": "The EMC shall be able to uniquely identify each contributor, collector, and station sensor."
+          },
+          {
+            "id": "H-120E3",
+            "text": "The EMC shall be able to maintain contact info for each contributor, collector, and station sensor."
+          },
+          {
+            "id": "H-120E4",
+            "text": "The EMC shall be able to maintain backup contact info for each contributor, collector, and station sensor."
+          },
+          {
+            "id": "H-120E5",
+            "text": "The EMC shall be able to maintain owner names for each contributor, collector, and station sensor."
+          },
+          {
+            "id": "H-120E6",
+            "text": "The EMC shall be able to maintain an equipment list for each station."
+          },
+          {
+            "id": "H-120E7",
+            "text": "The EMC shall be able to maintain pavement types for stations with corresponding instrumentation."
+          },
+          {
+            "id": "H-120E8",
+            "text": "The EMC shall be able to maintain latitude, longitude, and elevation for stations."
+          },
+          {
+            "id": "H-120E9",
+            "text": "The EMC shall be able to maintain a reference to additional metadata."
+          }
+        ]
+      },
+      "EMS": {
+        "high_level_requirement": {
+          "id": "H-120",
+          "text": "The Clarus system shall acquire, process, and disseminate environmental metadata."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-120F1",
+            "text": "The EMS shall accept source queries that consist of a list of Clarus contributors."
+          },
+          {
+            "id": "H-120F2",
+            "text": "The EMS shall accept source queries that consist of a list of Clarus contributors including station identifier."
+          },
+          {
+            "id": "H-120F3",
+            "text": "The EMS shall accept location queries based on a bounding latitude/longitude coordinate pair."
+          },
+          {
+            "id": "H-120F4",
+            "text": "The EMS shall accept location queries based on latitude/longitude location and radius."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-032",
+    "llrid": [
+      "I-032B1",
+      "I-032C1",
+      "I-032C2"
+    ],
+    "high level requirement": "The Clarus system shall manage environmental data and metadata according to the Clarus data sharing agreements.",
+    "Allocation": [
+      "CAS",
+      "CAUI"
+    ],
+    "low level requirement": [
+      "The CAS shall manage data sharing rules based on contributor data sharing agreements.",
+      "The CAUI shall enable administrators to manage contributor data sharing agreements.",
+      "The CAUI shall enable administrators to assign system privileges."
+    ],
+    "allocation_requirements": {
+      "CAS": {
+        "high_level_requirement": {
+          "id": "I-032",
+          "text": "The Clarus system shall manage environmental data and metadata according to the Clarus data sharing agreements."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-032B1",
+            "text": "The CAS shall manage data sharing rules based on contributor data sharing agreements."
+          }
+        ]
+      },
+      "CAUI": {
+        "high_level_requirement": {
+          "id": "I-032",
+          "text": "The Clarus system shall manage environmental data and metadata according to the Clarus data sharing agreements."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-032C1",
+            "text": "The CAUI shall enable administrators to manage contributor data sharing agreements."
+          },
+          {
+            "id": "I-032C2",
+            "text": "The CAUI shall enable administrators to assign system privileges."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-100",
+    "llrid": [
+      "F-100C1",
+      "F-100D1",
+      "F-100D2",
+      "F-100D3",
+      "F-100D4",
+      "F-100D5",
+      "F-100D6",
+      "F-100J1",
+      "F-100J2",
+      "F-100H1"
+    ],
+    "high level requirement": "The Clarus system shall collect, quality check, and disseminate environmental data.",
+    "Allocation": [
+      "CAUI",
+      "CS",
+      "QEDS",
+      "QChS"
+    ],
+    "low level requirement": [
+      "The CAUI shall be able to initiate CS on demand.",
+      "CS shall collect environmental data based on its configured schedule.",
+      "CS shall be able to transform extracted environmental data into the internal storage format.",
+      "CS shall be able to store transformed environmental data in the QEDC.",
+      "CS shall be able to convert observation units into the Clarus standard unit specification.",
+      "CS shall be able to be initiated on a schedule.",
+      "CS shall be able to be initiated on demand.",
+      "QEDS shall disseminate environmental data.",
+      "QEDS shall be able to disseminate environmental data in English units.",
+      "The QChS shall quality check environmental data."
+    ],
+    "allocation_requirements": {
+      "CAUI": {
+        "high_level_requirement": {
+          "id": "F-100",
+          "text": "The Clarus system shall collect, quality check, and disseminate environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-100C1",
+            "text": "The CAUI shall be able to initiate CS on demand."
+          }
+        ]
+      },
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-100",
+          "text": "The Clarus system shall collect, quality check, and disseminate environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-100D1",
+            "text": "CS shall collect environmental data based on its configured schedule."
+          },
+          {
+            "id": "F-100D2",
+            "text": "CS shall be able to transform extracted environmental data into the internal storage format."
+          },
+          {
+            "id": "F-100D3",
+            "text": "CS shall be able to store transformed environmental data in the QEDC."
+          },
+          {
+            "id": "F-100D4",
+            "text": "CS shall be able to convert observation units into the Clarus standard unit specification."
+          },
+          {
+            "id": "F-100D5",
+            "text": "CS shall be able to be initiated on a schedule."
+          },
+          {
+            "id": "F-100D6",
+            "text": "CS shall be able to be initiated on demand."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "F-100",
+          "text": "The Clarus system shall collect, quality check, and disseminate environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-100J1",
+            "text": "QEDS shall disseminate environmental data."
+          },
+          {
+            "id": "F-100J2",
+            "text": "QEDS shall be able to disseminate environmental data in English units."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-100",
+          "text": "The Clarus system shall collect, quality check, and disseminate environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-100H1",
+            "text": "The QChS shall quality check environmental data."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-111",
+    "llrid": [
+      "F-111C1",
+      "F-111C2",
+      "F-111C3",
+      "F-111C4",
+      "F-111I1",
+      "F-111H1",
+      "F-111H2"
+    ],
+    "high level requirement": "The Clarus system shall provide environmental data quality flags.",
+    "Allocation": [
+      "CAUI",
+      "QEDC",
+      "QChS"
+    ],
+    "low level requirement": [
+      "The CAUI shall enable a quality manager to apply manual flags to a set of observations from an individual ESS.",
+      "The CAUI shall enable a quality manager to apply manual flags to a set of observations.",
+      "The CAUI shall enable a quality manager to apply manual flags to a set of observations over a fixed time range.",
+      "The CAUI shall enable a quality manager to apply manual flags to a set of observations over a time range with an open ended future time.",
+      "The QEDC shall keep the results of each quality test for each observation for the life of the observation.",
+      "Each QChS shall produce a unique quality flag value.",
+      "The QChS shall be able to indicate a numeric confidence value."
+    ],
+    "allocation_requirements": {
+      "CAUI": {
+        "high_level_requirement": {
+          "id": "F-111",
+          "text": "The Clarus system shall provide environmental data quality flags."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-111C1",
+            "text": "The CAUI shall enable a quality manager to apply manual flags to a set of observations from an individual ESS."
+          },
+          {
+            "id": "F-111C2",
+            "text": "The CAUI shall enable a quality manager to apply manual flags to a set of observations."
+          },
+          {
+            "id": "F-111C3",
+            "text": "The CAUI shall enable a quality manager to apply manual flags to a set of observations over a fixed time range."
+          },
+          {
+            "id": "F-111C4",
+            "text": "The CAUI shall enable a quality manager to apply manual flags to a set of observations over a time range with an open ended future time."
+          }
+        ]
+      },
+      "QEDC": {
+        "high_level_requirement": {
+          "id": "F-111",
+          "text": "The Clarus system shall provide environmental data quality flags."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-111I1",
+            "text": "The QEDC shall keep the results of each quality test for each observation for the life of the observation."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-111",
+          "text": "The Clarus system shall provide environmental data quality flags."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-111H1",
+            "text": "Each QChS shall produce a unique quality flag value."
+          },
+          {
+            "id": "F-111H2",
+            "text": "The QChS shall be able to indicate a numeric confidence value."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-141",
+    "llrid": [
+      "F-141C1",
+      "F-141C3",
+      "F-141H1"
+    ],
+    "high level requirement": "The Clarus system shall allow human quality checks of environmental data.",
+    "Allocation": [
+      "CAUI",
+      "QChS"
+    ],
+    "low level requirement": [
+      "The CAUI shall allow a quality manager to apply a manual quality flag to environmental data.",
+      "The CAUI shall allow manual quality flags to be entered.",
+      "QChS shall implement a manual override to set quality flags."
+    ],
+    "allocation_requirements": {
+      "CAUI": {
+        "high_level_requirement": {
+          "id": "F-141",
+          "text": "The Clarus system shall allow human quality checks of environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-141C1",
+            "text": "The CAUI shall allow a quality manager to apply a manual quality flag to environmental data."
+          },
+          {
+            "id": "F-141C3",
+            "text": "The CAUI shall allow manual quality flags to be entered."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-141",
+          "text": "The Clarus system shall allow human quality checks of environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-141H1",
+            "text": "QChS shall implement a manual override to set quality flags."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-031",
+    "llrid": [
+      "I-031C1",
+      "I-031C2",
+      "I-031C3",
+      "I-031C4"
+    ],
+    "high level requirement": "The Clarus system shall provide a user interface for administration.",
+    "Allocation": [
+      "CAUI"
+    ],
+    "low level requirement": [
+      "The CAUI shall enable administrators to manage contributor metadata.",
+      "The CAUI shall enable administrators to manage collector metadata.",
+      "The CAUI shall enable administrators to manage quality checking schedules.",
+      "The CAUI shall enable administrators to manage environmental data collection schedules."
+    ],
+    "allocation_requirements": {
+      "CAUI": {
+        "high_level_requirement": {
+          "id": "I-031",
+          "text": "The Clarus system shall provide a user interface for administration."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-031C1",
+            "text": "The CAUI shall enable administrators to manage contributor metadata."
+          },
+          {
+            "id": "I-031C2",
+            "text": "The CAUI shall enable administrators to manage collector metadata."
+          },
+          {
+            "id": "I-031C3",
+            "text": "The CAUI shall enable administrators to manage quality checking schedules."
+          },
+          {
+            "id": "I-031C4",
+            "text": "The CAUI shall enable administrators to manage environmental data collection schedules."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-200",
+    "llrid": [
+      "F-200D1"
+    ],
+    "high level requirement": "The Clarus system shall be able to detect data submission errors.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall log when a data submission error occurs."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-200",
+          "text": "The Clarus system shall be able to detect data submission errors."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-200D1",
+            "text": "CS shall log when a data submission error occurs."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-201",
+    "llrid": [
+      "F-201D1"
+    ],
+    "high level requirement": "The Clarus system shall be able to access in-situ environmental observations from data collectors.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall be able to collect in-situ environmental observations from data collectors."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-201",
+          "text": "The Clarus system shall be able to access in-situ environmental observations from data collectors."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-201D1",
+            "text": "CS shall be able to collect in-situ environmental observations from data collectors."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-205",
+    "llrid": [
+      "F-205D1"
+    ],
+    "high level requirement": "The Clarus system shall be able to access remotely sensed environmental observations from data collectors.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall be able to retrieve remotely sensed environmental observations from data collectors."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-205",
+          "text": "The Clarus system shall be able to access remotely sensed environmental observations from data collectors."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-205D1",
+            "text": "CS shall be able to retrieve remotely sensed environmental observations from data collectors."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-211",
+    "llrid": [
+      "F-211D1"
+    ],
+    "high level requirement": "The Clarus system shall be able to receive roadway weather measurements derived from VII data.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall be able to retrieve roadway weather measurements derived from VII data."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-211",
+          "text": "The Clarus system shall be able to receive roadway weather measurements derived from VII data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-211D1",
+            "text": "CS shall be able to retrieve roadway weather measurements derived from VII data."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-214",
+    "llrid": [
+      "F-214D1",
+      "F-214D2"
+    ],
+    "high level requirement": "The Clarus system shall accept environmental data derived from images.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall accept surface condition data derived from surface images.",
+      "CS shall accept atmospheric condition data derived from atmospheric images."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-214",
+          "text": "The Clarus system shall accept environmental data derived from images."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-214D1",
+            "text": "CS shall accept surface condition data derived from surface images."
+          },
+          {
+            "id": "F-214D2",
+            "text": "CS shall accept atmospheric condition data derived from atmospheric images."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-221",
+    "llrid": [
+      "F-221D1"
+    ],
+    "high level requirement": "The Clarus system shall be able to retrieve environmental data directly from environmental sensor station collectors.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall be able to retrieve environmental data directly from environmental sensor station collectors."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-221",
+          "text": "The Clarus system shall be able to retrieve environmental data directly from environmental sensor station collectors."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-221D1",
+            "text": "CS shall be able to retrieve environmental data directly from environmental sensor station collectors."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-222",
+    "llrid": [
+      "F-222D1"
+    ],
+    "high level requirement": "The Clarus system shall minimize the time for data acquisition.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall be able to dynamically adjust its retrieval schedules when environmental data is expected to be ready but is temporarily delayed."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-222",
+          "text": "The Clarus system shall minimize the time for data acquisition."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-222D1",
+            "text": "CS shall be able to dynamically adjust its retrieval schedules when environmental data is expected to be ready but is temporarily delayed."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-223",
+    "llrid": [
+      "F-223D1",
+      "F-223H1"
+    ],
+    "high level requirement": "The Clarus system shall process data as they are received.",
+    "Allocation": [
+      "CS",
+      "QChS"
+    ],
+    "low level requirement": [
+      "CS shall process environmental data as they are received.",
+      "QChS shall apply quality flags to data as they are received."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-223",
+          "text": "The Clarus system shall process data as they are received."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-223D1",
+            "text": "CS shall process environmental data as they are received."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-223",
+          "text": "The Clarus system shall process data as they are received."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-223H1",
+            "text": "QChS shall apply quality flags to data as they are received."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-231",
+    "llrid": [
+      "F-231D1"
+    ],
+    "high level requirement": "The Clarus system shall collect pavement-related observations.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall be able to collect pavement-related observations."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-231",
+          "text": "The Clarus system shall collect pavement-related observations."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-231D1",
+            "text": "CS shall be able to collect pavement-related observations."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-241",
+    "llrid": [
+      "F-241D1",
+      "F-241D2"
+    ],
+    "high level requirement": "The Clarus system shall accept environmental data from railway systems or in-situ ESS along tracks.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall be able to collect environmental data from railway systems from railway collectors.",
+      "CS shall be able to collect environmental data from in-situ ESS along tracks from railway collectors."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-241",
+          "text": "The Clarus system shall accept environmental data from railway systems or in-situ ESS along tracks."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-241D1",
+            "text": "CS shall be able to collect environmental data from railway systems from railway collectors."
+          },
+          {
+            "id": "F-241D2",
+            "text": "CS shall be able to collect environmental data from in-situ ESS along tracks from railway collectors."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-245",
+    "llrid": [
+      "F-245D1"
+    ],
+    "high level requirement": "The Clarus system shall accept environmental data from railroad vehicles.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall accept environmental data derived from railroad vehicle data."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-245",
+          "text": "The Clarus system shall accept environmental data from railroad vehicles."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-245D1",
+            "text": "CS shall accept environmental data derived from railroad vehicle data."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-251",
+    "llrid": [
+      "F-251D1"
+    ],
+    "high level requirement": "The Clarus system shall accept environmental data from (roadway) vehicles.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall accept environmental data collected from (roadway) vehicles."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-251",
+          "text": "The Clarus system shall accept environmental data from (roadway) vehicles."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-251D1",
+            "text": "CS shall accept environmental data collected from (roadway) vehicles."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-255",
+    "llrid": [
+      "F-255D1"
+    ],
+    "high level requirement": "The Clarus system shall accept environmental data from maintenance and construction vehicles.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall accept environmental data collected from maintenance and construction vehicles."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-255",
+          "text": "The Clarus system shall accept environmental data from maintenance and construction vehicles."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-255D1",
+            "text": "CS shall accept environmental data collected from maintenance and construction vehicles."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-261",
+    "llrid": [
+      "F-261D1"
+    ],
+    "high level requirement": "The Clarus system shall accept environmental data from service patrol vehicles.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall accept environmental data collected from service patrol vehicles."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-261",
+          "text": "The Clarus system shall accept environmental data from service patrol vehicles."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-261D1",
+            "text": "CS shall accept environmental data collected from service patrol vehicles."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-271",
+    "llrid": [
+      "F-271D1"
+    ],
+    "high level requirement": "The Clarus system shall accept environmental data from transit vehicles.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall accept environmental data collected from transit vehicles."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-271",
+          "text": "The Clarus system shall accept environmental data from transit vehicles."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-271D1",
+            "text": "CS shall accept environmental data collected from transit vehicles."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-275",
+    "llrid": [
+      "F-275D1"
+    ],
+    "high level requirement": "The Clarus system shall accept environmental data from emergency vehicles.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall accept environmental data collected from emergency vehicles."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-275",
+          "text": "The Clarus system shall accept environmental data from emergency vehicles."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-275D1",
+            "text": "CS shall accept environmental data collected from emergency vehicles."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-281",
+    "llrid": [
+      "F-281D1"
+    ],
+    "high level requirement": "The Clarus system shall be able to receive weather data from weather service providers.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall be able to receive weather data from weather service providers."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "F-281",
+          "text": "The Clarus system shall be able to receive weather data from weather service providers."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-281D1",
+            "text": "CS shall be able to receive weather data from weather service providers."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "H-011",
+    "llrid": [
+      "H-011D1",
+      "H-011I1",
+      "H-011J1"
+    ],
+    "high level requirement": "The Clarus system baseline data types shall be defined by the NTCIP ESS 1204 standard.",
+    "Allocation": [
+      "CS",
+      "QEDC",
+      "QEDS"
+    ],
+    "low level requirement": [
+      "CS shall accept data types defined by NTCIP 1204.",
+      "The QEDC observation types shall be defined by NTCIP ESS 1204.",
+      "QEDS shall disseminate environmental data types defined by NTCIP 1204."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "H-011",
+          "text": "The Clarus system baseline data types shall be defined by the NTCIP ESS 1204 standard."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-011D1",
+            "text": "CS shall accept data types defined by NTCIP 1204."
+          }
+        ]
+      },
+      "QEDC": {
+        "high_level_requirement": {
+          "id": "H-011",
+          "text": "The Clarus system baseline data types shall be defined by the NTCIP ESS 1204 standard."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-011I1",
+            "text": "The QEDC observation types shall be defined by NTCIP ESS 1204."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "H-011",
+          "text": "The Clarus system baseline data types shall be defined by the NTCIP ESS 1204 standard."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-011J1",
+            "text": "QEDS shall disseminate environmental data types defined by NTCIP 1204."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "H-012",
+    "llrid": [
+      "H-012D1",
+      "H-012D2",
+      "H-012J1"
+    ],
+    "high level requirement": "The Clarus system data definitions shall be consistent with the ITE TM 1.03 standard, Functional Level Traffic Management Data Dictionary (TMDD).",
+    "Allocation": [
+      "CS",
+      "QEDS"
+    ],
+    "low level requirement": [
+      "CS shall accept environmental data described by definitions defined by the TMDD.",
+      "CS shall accept environmental data described by definitions defined by CMML version 2.",
+      "QEDS shall disseminate data with descriptions that conform to the TMDD."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "H-012",
+          "text": "The Clarus system data definitions shall be consistent with the ITE TM 1.03 standard, Functional Level Traffic Management Data Dictionary (TMDD)."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-012D1",
+            "text": "CS shall accept environmental data described by definitions defined by the TMDD."
+          },
+          {
+            "id": "H-012D2",
+            "text": "CS shall accept environmental data described by definitions defined by CMML version 2."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "H-012",
+          "text": "The Clarus system data definitions shall be consistent with the ITE TM 1.03 standard, Functional Level Traffic Management Data Dictionary (TMDD)."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-012J1",
+            "text": "QEDS shall disseminate data with descriptions that conform to the TMDD."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "H-020",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall acquire, process, and disseminate environmental data.",
+    "Allocation": [
+      "CS",
+      "QEDS",
+      "QChS"
+    ],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "H-020",
+          "text": "The Clarus system shall acquire, process, and disseminate environmental data."
+        },
+        "low_level_requirements": []
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "H-020",
+          "text": "The Clarus system shall acquire, process, and disseminate environmental data."
+        },
+        "low_level_requirements": []
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "H-020",
+          "text": "The Clarus system shall acquire, process, and disseminate environmental data."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "H-151",
+    "llrid": [
+      "H-151D1"
+    ],
+    "high level requirement": "The Clarus system shall accept only observations that include location, timestamp, and source metadata.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall accept only observations that include location, timestamp, and source metadata."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "H-151",
+          "text": "The Clarus system shall accept only observations that include location, timestamp, and source metadata."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-151D1",
+            "text": "CS shall accept only observations that include location, timestamp, and source metadata."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "H-155",
+    "llrid": [
+      "H-155D1"
+    ],
+    "high level requirement": "The Clarus system shall accept only observations of identified measurement types and units.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall accept only observation of identified measurement types and units."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "H-155",
+          "text": "The Clarus system shall accept only observations of identified measurement types and units."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-155D1",
+            "text": "CS shall accept only observation of identified measurement types and units."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "H-301",
+    "llrid": [
+      "H-301D1",
+      "H-301J1",
+      "H-301H1"
+    ],
+    "high level requirement": "The Clarus system shall be able to acquire, process, and disseminate environmental data from across North America.",
+    "Allocation": [
+      "CS",
+      "QEDS",
+      "QChS"
+    ],
+    "low level requirement": [
+      "CS shall be able to acquire environmental data from across North America.",
+      "QEDS shall be able to disseminate environmental data collected from across North America.",
+      "QChS shall process environmental data from across North America."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "H-301",
+          "text": "The Clarus system shall be able to acquire, process, and disseminate environmental data from across North America."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-301D1",
+            "text": "CS shall be able to acquire environmental data from across North America."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "H-301",
+          "text": "The Clarus system shall be able to acquire, process, and disseminate environmental data from across North America."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-301J1",
+            "text": "QEDS shall be able to disseminate environmental data collected from across North America."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "H-301",
+          "text": "The Clarus system shall be able to acquire, process, and disseminate environmental data from across North America."
+        },
+        "low_level_requirements": [
+          {
+            "id": "H-301H1",
+            "text": "QChS shall process environmental data from across North America."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-011",
+    "llrid": [
+      "I-011D1"
+    ],
+    "high level requirement": "The Clarus system shall accept data through a Clarus standard interface.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall implement the Clarus standard interface."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "I-011",
+          "text": "The Clarus system shall accept data through a Clarus standard interface."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-011D1",
+            "text": "CS shall implement the Clarus standard interface."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-012",
+    "llrid": [
+      "I-012D1"
+    ],
+    "high level requirement": "The Clarus system shall be able to communicate with environmental sensor stations through its collector using the NTCIP ESS 1204.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall be able to process NTCIP ESS 1204 data."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "I-012",
+          "text": "The Clarus system shall be able to communicate with environmental sensor stations through its collector using the NTCIP ESS 1204."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-012D1",
+            "text": "CS shall be able to process NTCIP ESS 1204 data."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-013",
+    "llrid": [
+      "I-013D1"
+    ],
+    "high level requirement": "The Clarus system shall be able to communicate with RWIS databases through their native interfaces.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [
+      "CS shall be able to accept data from an RWIS database in its native output format."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "I-013",
+          "text": "The Clarus system shall be able to communicate with RWIS databases through their native interfaces."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-013D1",
+            "text": "CS shall be able to accept data from an RWIS database in its native output format."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-014",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall be able to communicate with an individual ESS through its native interface.",
+    "Allocation": [
+      "CS"
+    ],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "I-014",
+          "text": "The Clarus system shall be able to communicate with an individual ESS through its native interface."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "I-016",
+    "llrid": [
+      "I-016D1",
+      "I-016D2",
+      "I-016D3",
+      "I-016F1",
+      "I-016J1",
+      "I-016K1",
+      "I-016K2"
+    ],
+    "high level requirement": "The Clarus system shall transfer data as efficiently as possible.",
+    "Allocation": [
+      "CS",
+      "EMS",
+      "QEDS",
+      "SS"
+    ],
+    "low level requirement": [
+      "CS shall transfer data concurrently.",
+      "CS shall be able to request collector environmental data on demand.",
+      "CS shall be able to accept environmental data pushed from collectors.",
+      "EMS shall transfer data concurrently.",
+      "QEDS shall transfer data concurrently.",
+      "The SS shall be able to store event schedules.",
+      "The SS shall be able to initiate CS."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "I-016",
+          "text": "The Clarus system shall transfer data as efficiently as possible."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-016D1",
+            "text": "CS shall transfer data concurrently."
+          },
+          {
+            "id": "I-016D2",
+            "text": "CS shall be able to request collector environmental data on demand."
+          },
+          {
+            "id": "I-016D3",
+            "text": "CS shall be able to accept environmental data pushed from collectors."
+          }
+        ]
+      },
+      "EMS": {
+        "high_level_requirement": {
+          "id": "I-016",
+          "text": "The Clarus system shall transfer data as efficiently as possible."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-016F1",
+            "text": "EMS shall transfer data concurrently."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "I-016",
+          "text": "The Clarus system shall transfer data as efficiently as possible."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-016J1",
+            "text": "QEDS shall transfer data concurrently."
+          }
+        ]
+      },
+      "SS": {
+        "high_level_requirement": {
+          "id": "I-016",
+          "text": "The Clarus system shall transfer data as efficiently as possible."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-016K1",
+            "text": "The SS shall be able to store event schedules."
+          },
+          {
+            "id": "I-016K2",
+            "text": "The SS shall be able to initiate CS."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-017",
+    "llrid": [
+      "I-017D1",
+      "I-017D2",
+      "I-017D3",
+      "I-017D4",
+      "I-017D5",
+      "I-017D6",
+      "I-017E1",
+      "I-017F1",
+      "I-017J1",
+      "I-017J2",
+      "I-017J3",
+      "I-017J4"
+    ],
+    "high level requirement": "The Clarus system shall employ industry standards to minimize implementation impact to users and providers.",
+    "Allocation": [
+      "CS",
+      "EMC",
+      "EMS",
+      "QEDS"
+    ],
+    "low level requirement": [
+      "CS shall be able to extract environmental data from an XML message that conforms to the Clarus standard XML message specification.",
+      "CS shall be able to extract environmental data from comma separated value messages.",
+      "CS that process comma separated value ASCII text shall be able to dynamically parse environmental data that includes a descriptive header row conforming to the Clarus collector standard message specification.",
+      "CS that process comma separated value ASCII text shall be able to dynamically parse environmental data described by a stored collector configuration.",
+      "CS shall be able to extract environmental data from CMML version 2 messages.",
+      "CS shall be able to extract environmental data from netCDF version 3.6 messages.",
+      "The EMC shall store collector metadata that consists of information based on TMDD & MS/ETMCC.",
+      "EMS shall be able to distribute metadata in a comma separated value ASCII format.",
+      "QEDS shall be able to disseminate environmental data in netCDF version 3.6 format.",
+      "QEDS shall be able to disseminate environmental data in HDF version 5 format.",
+      "QEDS shall be able to disseminate environmental data in CMML version 2 format.",
+      "QEDS shall be able to disseminate environmental data in comma separated value ASCII format."
+    ],
+    "allocation_requirements": {
+      "CS": {
+        "high_level_requirement": {
+          "id": "I-017",
+          "text": "The Clarus system shall employ industry standards to minimize implementation impact to users and providers."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-017D1",
+            "text": "CS shall be able to extract environmental data from an XML message that conforms to the Clarus standard XML message specification."
+          },
+          {
+            "id": "I-017D2",
+            "text": "CS shall be able to extract environmental data from comma separated value messages."
+          },
+          {
+            "id": "I-017D3",
+            "text": "CS that process comma separated value ASCII text shall be able to dynamically parse environmental data that includes a descriptive header row conforming to the Clarus collector standard message specification."
+          },
+          {
+            "id": "I-017D4",
+            "text": "CS that process comma separated value ASCII text shall be able to dynamically parse environmental data described by a stored collector configuration."
+          },
+          {
+            "id": "I-017D5",
+            "text": "CS shall be able to extract environmental data from CMML version 2 messages."
+          },
+          {
+            "id": "I-017D6",
+            "text": "CS shall be able to extract environmental data from netCDF version 3.6 messages."
+          }
+        ]
+      },
+      "EMC": {
+        "high_level_requirement": {
+          "id": "I-017",
+          "text": "The Clarus system shall employ industry standards to minimize implementation impact to users and providers."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-017E1",
+            "text": "The EMC shall store collector metadata that consists of information based on TMDD & MS/ETMCC."
+          }
+        ]
+      },
+      "EMS": {
+        "high_level_requirement": {
+          "id": "I-017",
+          "text": "The Clarus system shall employ industry standards to minimize implementation impact to users and providers."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-017F1",
+            "text": "EMS shall be able to distribute metadata in a comma separated value ASCII format."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "I-017",
+          "text": "The Clarus system shall employ industry standards to minimize implementation impact to users and providers."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-017J1",
+            "text": "QEDS shall be able to disseminate environmental data in netCDF version 3.6 format."
+          },
+          {
+            "id": "I-017J2",
+            "text": "QEDS shall be able to disseminate environmental data in HDF version 5 format."
+          },
+          {
+            "id": "I-017J3",
+            "text": "QEDS shall be able to disseminate environmental data in CMML version 2 format."
+          },
+          {
+            "id": "I-017J4",
+            "text": "QEDS shall be able to disseminate environmental data in comma separated value ASCII format."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "Q-012",
+    "llrid": [
+      "Q-012G1",
+      "Q-012G2"
+    ],
+    "high level requirement": "The Clarus system shall be able to automatically recover from an unexpected shutdown.",
+    "Allocation": [
+      "DOG"
+    ],
+    "low level requirement": [
+      "The watchdog service shall monitor the overall Clarus system state.",
+      "The watchdog service shall be able to restart unresponsive Clarus system services."
+    ],
+    "allocation_requirements": {
+      "DOG": {
+        "high_level_requirement": {
+          "id": "Q-012",
+          "text": "The Clarus system shall be able to automatically recover from an unexpected shutdown."
+        },
+        "low_level_requirements": [
+          {
+            "id": "Q-012G1",
+            "text": "The watchdog service shall monitor the overall Clarus system state."
+          },
+          {
+            "id": "Q-012G2",
+            "text": "The watchdog service shall be able to restart unresponsive Clarus system services."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "D-062",
+    "llrid": [
+      "D-062F1"
+    ],
+    "high level requirement": "The Clarus system shall disseminate environmental metadata in response to polling.",
+    "Allocation": [
+      "EMS"
+    ],
+    "low level requirement": [
+      "EMS shall disseminate metadata in response to polling."
+    ],
+    "allocation_requirements": {
+      "EMS": {
+        "high_level_requirement": {
+          "id": "D-062",
+          "text": "The Clarus system shall disseminate environmental metadata in response to polling."
+        },
+        "low_level_requirements": [
+          {
+            "id": "D-062F1",
+            "text": "EMS shall disseminate metadata in response to polling."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "D-091",
+    "llrid": [
+      "D-091F1",
+      "D-091J1"
+    ],
+    "high level requirement": "The Clarus system shall disseminate data using standard Internet protocols.",
+    "Allocation": [
+      "EMS",
+      "QEDS"
+    ],
+    "low level requirement": [
+      "EMS shall disseminate metadata using standard Internet protocols.",
+      "QEDS system shall disseminate environmental data using standard Internet protocols."
+    ],
+    "allocation_requirements": {
+      "EMS": {
+        "high_level_requirement": {
+          "id": "D-091",
+          "text": "The Clarus system shall disseminate data using standard Internet protocols."
+        },
+        "low_level_requirements": [
+          {
+            "id": "D-091F1",
+            "text": "EMS shall disseminate metadata using standard Internet protocols."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "D-091",
+          "text": "The Clarus system shall disseminate data using standard Internet protocols."
+        },
+        "low_level_requirements": [
+          {
+            "id": "D-091J1",
+            "text": "QEDS system shall disseminate environmental data using standard Internet protocols."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-401",
+    "llrid": [
+      "F-401F1"
+    ],
+    "high level requirement": "The Clarus system shall be able to provide sensor equipment metadata in response to a request.",
+    "Allocation": [
+      "EMS"
+    ],
+    "low level requirement": [
+      "EMS shall be able to provide sensor equipment metadata in response to a request."
+    ],
+    "allocation_requirements": {
+      "EMS": {
+        "high_level_requirement": {
+          "id": "F-401",
+          "text": "The Clarus system shall be able to provide sensor equipment metadata in response to a request."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-401F1",
+            "text": "EMS shall be able to provide sensor equipment metadata in response to a request."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-501",
+    "llrid": [
+      "F-501F1",
+      "F-501J1"
+    ],
+    "high level requirement": "The Clarus system shall minimize the time for data dissemination.",
+    "Allocation": [
+      "EMS",
+      "QEDS"
+    ],
+    "low level requirement": [
+      "EMS shall respond to queries for metadata within five minutes.",
+      "QEDS shall respond to environmental data queries within one minute."
+    ],
+    "allocation_requirements": {
+      "EMS": {
+        "high_level_requirement": {
+          "id": "F-501",
+          "text": "The Clarus system shall minimize the time for data dissemination."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-501F1",
+            "text": "EMS shall respond to queries for metadata within five minutes."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "F-501",
+          "text": "The Clarus system shall minimize the time for data dissemination."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-501J1",
+            "text": "QEDS shall respond to environmental data queries within one minute."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-023",
+    "llrid": [
+      "I-023F1",
+      "I-023F2"
+    ],
+    "high level requirement": "The Clarus system shall respond to queries for environmental metadata from the available metadata.",
+    "Allocation": [
+      "EMS"
+    ],
+    "low level requirement": [
+      "EMS responses shall include metadata that meets the requested metadata query filtering specifications.",
+      "EMS shall respond to queries returning no results with a message stating that no results matching that query are available."
+    ],
+    "allocation_requirements": {
+      "EMS": {
+        "high_level_requirement": {
+          "id": "I-023",
+          "text": "The Clarus system shall respond to queries for environmental metadata from the available metadata."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-023F1",
+            "text": "EMS responses shall include metadata that meets the requested metadata query filtering specifications."
+          },
+          {
+            "id": "I-023F2",
+            "text": "EMS shall respond to queries returning no results with a message stating that no results matching that query are available."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "P-025",
+    "llrid": [
+      "P-025F1",
+      "P-025J1"
+    ],
+    "high level requirement": "The Clarus system shall respond to a request for information within five minutes.",
+    "Allocation": [
+      "EMS",
+      "QEDS"
+    ],
+    "low level requirement": [
+      "The EMS shall respond to a request for metadata within five minutes.",
+      "QEDS shall respond to an environmental data request within one minute."
+    ],
+    "allocation_requirements": {
+      "EMS": {
+        "high_level_requirement": {
+          "id": "P-025",
+          "text": "The Clarus system shall respond to a request for information within five minutes."
+        },
+        "low_level_requirements": [
+          {
+            "id": "P-025F1",
+            "text": "The EMS shall respond to a request for metadata within five minutes."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "P-025",
+          "text": "The Clarus system shall respond to a request for information within five minutes."
+        },
+        "low_level_requirements": [
+          {
+            "id": "P-025J1",
+            "text": "QEDS shall respond to an environmental data request within one minute."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-521",
+    "llrid": [
+      "F-521I1"
+    ],
+    "high level requirement": "The Clarus system shall maintain a dynamic library of data for at least seven days.",
+    "Allocation": [
+      "QEDC"
+    ],
+    "low level requirement": [
+      "The QEDC shall maintain observations and their associated quality flags for seven days."
+    ],
+    "allocation_requirements": {
+      "QEDC": {
+        "high_level_requirement": {
+          "id": "F-521",
+          "text": "The Clarus system shall maintain a dynamic library of data for at least seven days."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-521I1",
+            "text": "The QEDC shall maintain observations and their associated quality flags for seven days."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-021",
+    "llrid": [
+      "I-021I1",
+      "I-021J1"
+    ],
+    "high level requirement": "The Clarus system shall allow service providers to select specific desired data sets.",
+    "Allocation": [
+      "QEDC",
+      "QEDS"
+    ],
+    "low level requirement": [
+      "The QEDC shall support queries for its observations.",
+      "QEDS shall respond to environmental data queries selecting specific desired datasets."
+    ],
+    "allocation_requirements": {
+      "QEDC": {
+        "high_level_requirement": {
+          "id": "I-021",
+          "text": "The Clarus system shall allow service providers to select specific desired data sets."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-021I1",
+            "text": "The QEDC shall support queries for its observations."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "I-021",
+          "text": "The Clarus system shall allow service providers to select specific desired data sets."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-021J1",
+            "text": "QEDS shall respond to environmental data queries selecting specific desired datasets."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-022",
+    "llrid": [
+      "I-022I1",
+      "I-022J1",
+      "I-022J2"
+    ],
+    "high level requirement": "The Clarus system shall respond to queries for environmental data from the available data.",
+    "Allocation": [
+      "QEDC",
+      "QEDS"
+    ],
+    "low level requirement": [
+      "The QEDC shall support queries against all of its available observation datasets.",
+      "QEDS shall enable users to request environmental data from among the available output formats.",
+      "QEDS shall respond to queries returning no results with a message stating that no results matching that query are available."
+    ],
+    "allocation_requirements": {
+      "QEDC": {
+        "high_level_requirement": {
+          "id": "I-022",
+          "text": "The Clarus system shall respond to queries for environmental data from the available data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-022I1",
+            "text": "The QEDC shall support queries against all of its available observation datasets."
+          }
+        ]
+      },
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "I-022",
+          "text": "The Clarus system shall respond to queries for environmental data from the available data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-022J1",
+            "text": "QEDS shall enable users to request environmental data from among the available output formats."
+          },
+          {
+            "id": "I-022J2",
+            "text": "QEDS shall respond to queries returning no results with a message stating that no results matching that query are available."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "P-013",
+    "llrid": [
+      "P-013I1"
+    ],
+    "high level requirement": "The Clarus system shall support 470 million current observations.",
+    "Allocation": [
+      "QEDC"
+    ],
+    "low level requirement": [
+      "The QEDC combined from all available Clarus hosts shall support 470 million current observations."
+    ],
+    "allocation_requirements": {
+      "QEDC": {
+        "high_level_requirement": {
+          "id": "P-013",
+          "text": "The Clarus system shall support 470 million current observations."
+        },
+        "low_level_requirements": [
+          {
+            "id": "P-013I1",
+            "text": "The QEDC combined from all available Clarus hosts shall support 470 million current observations."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "D-051",
+    "llrid": [
+      "D-051J1",
+      "D-051K1"
+    ],
+    "high level requirement": "The Clarus system shall disseminate data in response to a scheduled request.",
+    "Allocation": [
+      "QEDS",
+      "SS"
+    ],
+    "low level requirement": [
+      "QEDS shall disseminate data in response to a scheduled environmental data request.",
+      "The SS shall be able to initiate a QEDS response."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "D-051",
+          "text": "The Clarus system shall disseminate data in response to a scheduled request."
+        },
+        "low_level_requirements": [
+          {
+            "id": "D-051J1",
+            "text": "QEDS shall disseminate data in response to a scheduled environmental data request."
+          }
+        ]
+      },
+      "SS": {
+        "high_level_requirement": {
+          "id": "D-051",
+          "text": "The Clarus system shall disseminate data in response to a scheduled request."
+        },
+        "low_level_requirements": [
+          {
+            "id": "D-051K1",
+            "text": "The SS shall be able to initiate a QEDS response."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "D-061",
+    "llrid": [
+      "D-061J1"
+    ],
+    "high level requirement": "The Clarus system shall disseminate environmental data in response to polling.",
+    "Allocation": [
+      "QEDS"
+    ],
+    "low level requirement": [
+      "QEDS shall disseminate data in response to an immediate environmental data request."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "D-061",
+          "text": "The Clarus system shall disseminate environmental data in response to polling."
+        },
+        "low_level_requirements": [
+          {
+            "id": "D-061J1",
+            "text": "QEDS shall disseminate data in response to an immediate environmental data request."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "D-071",
+    "llrid": [
+      "D-071J1"
+    ],
+    "high level requirement": "The Clarus system shall disseminate data in response to a change notification request.",
+    "Allocation": [
+      "QEDS"
+    ],
+    "low level requirement": [
+      "QEDS shall disseminate data in response to a change notification request."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "D-071",
+          "text": "The Clarus system shall disseminate data in response to a change notification request."
+        },
+        "low_level_requirements": [
+          {
+            "id": "D-071J1",
+            "text": "QEDS shall disseminate data in response to a change notification request."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "D-081",
+    "llrid": [
+      "D-081J1",
+      "D-081J2"
+    ],
+    "high level requirement": "The Clarus system shall be able to notify subscribers when data sets become available.",
+    "Allocation": [
+      "QEDS"
+    ],
+    "low level requirement": [
+      "QEDS shall disseminate environmental data to subscribers when datasets fulfilling a subscription query become available.",
+      "QEDS shall be able to disseminate environmental data to contributor subscribers when datasets fulfilling a subscription query applying threshold filters become available."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "D-081",
+          "text": "The Clarus system shall be able to notify subscribers when data sets become available."
+        },
+        "low_level_requirements": [
+          {
+            "id": "D-081J1",
+            "text": "QEDS shall disseminate environmental data to subscribers when datasets fulfilling a subscription query become available."
+          },
+          {
+            "id": "D-081J2",
+            "text": "QEDS shall be able to disseminate environmental data to contributor subscribers when datasets fulfilling a subscription query applying threshold filters become available."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-115",
+    "llrid": [
+      "F-115J1",
+      "F-115J2",
+      "F-115H1"
+    ],
+    "high level requirement": "The Clarus system shall provide notification of data quality conditions to data contributors.",
+    "Allocation": [
+      "QEDS",
+      "QChS"
+    ],
+    "low level requirement": [
+      "The observation quality flags shall be used to determine data quality condition notifications.",
+      "QEDS shall provide quality checking statistics to data contributors.",
+      "A QChS shall evaluate data quality conditions."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "F-115",
+          "text": "The Clarus system shall provide notification of data quality conditions to data contributors."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-115J1",
+            "text": "The observation quality flags shall be used to determine data quality condition notifications."
+          },
+          {
+            "id": "F-115J2",
+            "text": "QEDS shall provide quality checking statistics to data contributors."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-115",
+          "text": "The Clarus system shall provide notification of data quality conditions to data contributors."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-115H1",
+            "text": "A QChS shall evaluate data quality conditions."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-140",
+    "llrid": [
+      "F-140J1"
+    ],
+    "high level requirement": "The Clarus system shall enable quality managers to review which quality checks passed or failed.",
+    "Allocation": [
+      "QEDS"
+    ],
+    "low level requirement": [
+      "QEDS shall enable quality managers to review which quality checks passed or failed."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "F-140",
+          "text": "The Clarus system shall enable quality managers to review which quality checks passed or failed."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-140J1",
+            "text": "QEDS shall enable quality managers to review which quality checks passed or failed."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-219",
+    "llrid": [
+      "F-219J1"
+    ],
+    "high level requirement": "The Clarus system shall disseminate NWS watches, warnings, and advisories.",
+    "Allocation": [
+      "QEDS"
+    ],
+    "low level requirement": [
+      "QEDS shall be able to disseminate NWS watches, warnings, and advisories."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "F-219",
+          "text": "The Clarus system shall disseminate NWS watches, warnings, and advisories."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-219J1",
+            "text": "QEDS shall be able to disseminate NWS watches, warnings, and advisories."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-505",
+    "llrid": [
+      "F-505J1"
+    ],
+    "high level requirement": "The Clarus system shall be able to disseminate data based on spatial queries.",
+    "Allocation": [
+      "QEDS"
+    ],
+    "low level requirement": [
+      "QEDS shall be able to disseminate data based on spatial queries."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "F-505",
+          "text": "The Clarus system shall be able to disseminate data based on spatial queries."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-505J1",
+            "text": "QEDS shall be able to disseminate data based on spatial queries."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-025",
+    "llrid": [
+      "I-025J1"
+    ],
+    "high level requirement": "The Clarus system shall enable environmental data queries by timestamp.",
+    "Allocation": [
+      "QEDS"
+    ],
+    "low level requirement": [
+      "QEDS shall accept timestamp queries based on a single timestamp range."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "I-025",
+          "text": "The Clarus system shall enable environmental data queries by timestamp."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-025J1",
+            "text": "QEDS shall accept timestamp queries based on a single timestamp range."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-026",
+    "llrid": [
+      "I-026J1",
+      "I-026J2"
+    ],
+    "high level requirement": "The Clarus system shall enable environmental data queries by location reference.",
+    "Allocation": [
+      "QEDS"
+    ],
+    "low level requirement": [
+      "QEDS shall accept location queries based on a bounding latitude/longitude coordinate pair.",
+      "QEDS shall accept location queries based on a latitude/longitude location and radius."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "I-026",
+          "text": "The Clarus system shall enable environmental data queries by location reference."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-026J1",
+            "text": "QEDS shall accept location queries based on a bounding latitude/longitude coordinate pair."
+          },
+          {
+            "id": "I-026J2",
+            "text": "QEDS shall accept location queries based on a latitude/longitude location and radius."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-027",
+    "llrid": [
+      "I-027J1"
+    ],
+    "high level requirement": "The Clarus system shall enable environmental data queries by quality.",
+    "Allocation": [
+      "QEDS"
+    ],
+    "low level requirement": [
+      "QEDS shall accept quality flag queries based on a range of quality flag values."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "I-027",
+          "text": "The Clarus system shall enable environmental data queries by quality."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-027J1",
+            "text": "QEDS shall accept quality flag queries based on a range of quality flag values."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-028",
+    "llrid": [
+      "I-028J1",
+      "I-028J2"
+    ],
+    "high level requirement": "The Clarus system shall enable environmental data queries by source.",
+    "Allocation": [
+      "QEDS"
+    ],
+    "low level requirement": [
+      "QEDS shall accept source queries that consist of a list of Clarus contributors.",
+      "QEDS shall accept source queries that are a list of Clarus contributors combined with a station identifier."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "I-028",
+          "text": "The Clarus system shall enable environmental data queries by source."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-028J1",
+            "text": "QEDS shall accept source queries that consist of a list of Clarus contributors."
+          },
+          {
+            "id": "I-028J2",
+            "text": "QEDS shall accept source queries that are a list of Clarus contributors combined with a station identifier."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "I-033",
+    "llrid": [
+      "I-033J1",
+      "I-033J2",
+      "I-033J3",
+      "I-033J4",
+      "I-033J5",
+      "I-033J6",
+      "I-033J7",
+      "I-033J8"
+    ],
+    "high level requirement": "The Clarus system shall allow users to create a data subscription request.",
+    "Allocation": [
+      "QEDS"
+    ],
+    "low level requirement": [
+      "QEDS shall be able to accept a subscription request.",
+      "QEDS shall accept data subscriptions that include an environmental data request and the publishing trigger.",
+      "QEDS shall be able to accept subscription requests with triggers based on a schedule.",
+      "QEDS shall be able to accept subscription requests with triggers based on quality flag state changes.",
+      "QEDS shall disseminate subscription responses to the originating request address by default.",
+      "QEDS shall disseminate subscription responses to a specified return address.",
+      "QEDS shall uniquely identify environmental data subscriptions.",
+      "QEDS shall automatically delete a subscription when the triggering event will not occur again and no more responses are possible."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "I-033",
+          "text": "The Clarus system shall allow users to create a data subscription request."
+        },
+        "low_level_requirements": [
+          {
+            "id": "I-033J1",
+            "text": "QEDS shall be able to accept a subscription request."
+          },
+          {
+            "id": "I-033J2",
+            "text": "QEDS shall accept data subscriptions that include an environmental data request and the publishing trigger."
+          },
+          {
+            "id": "I-033J3",
+            "text": "QEDS shall be able to accept subscription requests with triggers based on a schedule."
+          },
+          {
+            "id": "I-033J4",
+            "text": "QEDS shall be able to accept subscription requests with triggers based on quality flag state changes."
+          },
+          {
+            "id": "I-033J5",
+            "text": "QEDS shall disseminate subscription responses to the originating request address by default."
+          },
+          {
+            "id": "I-033J6",
+            "text": "QEDS shall disseminate subscription responses to a specified return address."
+          },
+          {
+            "id": "I-033J7",
+            "text": "QEDS shall uniquely identify environmental data subscriptions."
+          },
+          {
+            "id": "I-033J8",
+            "text": "QEDS shall automatically delete a subscription when the triggering event will not occur again and no more responses are possible."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "P-024",
+    "llrid": [
+      "P-024J1",
+      "P-024H1"
+    ],
+    "high level requirement": "The Clarus system shall be able to publish new data within twenty minutes of data receipt.",
+    "Allocation": [
+      "QEDS",
+      "QChS"
+    ],
+    "low level requirement": [
+      "QEDS shall disseminate subscription responses within twenty minutes of new data becoming available.",
+      "All QChS shall be completed within twenty minutes of data being available for checking."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "P-024",
+          "text": "The Clarus system shall be able to publish new data within twenty minutes of data receipt."
+        },
+        "low_level_requirements": [
+          {
+            "id": "P-024J1",
+            "text": "QEDS shall disseminate subscription responses within twenty minutes of new data becoming available."
+          }
+        ]
+      },
+      "QChS": {
+        "high_level_requirement": {
+          "id": "P-024",
+          "text": "The Clarus system shall be able to publish new data within twenty minutes of data receipt."
+        },
+        "low_level_requirements": [
+          {
+            "id": "P-024H1",
+            "text": "All QChS shall be completed within twenty minutes of data being available for checking."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "P-031",
+    "llrid": [
+      "P-031J1"
+    ],
+    "high level requirement": "The Clarus system shall be able to handle three hundred simultaneous requests for environmental data.",
+    "Allocation": [
+      "QEDS"
+    ],
+    "low level requirement": [
+      "QEDS shall be able to respond to three hundred simultaneous queries."
+    ],
+    "allocation_requirements": {
+      "QEDS": {
+        "high_level_requirement": {
+          "id": "P-031",
+          "text": "The Clarus system shall be able to handle three hundred simultaneous requests for environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "P-031J1",
+            "text": "QEDS shall be able to respond to three hundred simultaneous queries."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-121",
+    "llrid": [
+      "F-121H1",
+      "F-121H2",
+      "F-121H3"
+    ],
+    "high level requirement": "The Clarus system shall detect out of range values.",
+    "Allocation": [
+      "QChS"
+    ],
+    "low level requirement": [
+      "QChS algorithms shall use sensor range metadata for range checking bounds.",
+      "QChS algorithms shall use climate records for range checking bounds.",
+      "QChS algorithms shall be able to use monthly climate extremes for range checking bounds."
+    ],
+    "allocation_requirements": {
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-121",
+          "text": "The Clarus system shall detect out of range values."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-121H1",
+            "text": "QChS algorithms shall use sensor range metadata for range checking bounds."
+          },
+          {
+            "id": "F-121H2",
+            "text": "QChS algorithms shall use climate records for range checking bounds."
+          },
+          {
+            "id": "F-121H3",
+            "text": "QChS algorithms shall be able to use monthly climate extremes for range checking bounds."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-125",
+    "llrid": [
+      "F-125H1"
+    ],
+    "high level requirement": "The Clarus system shall not modify original observations.",
+    "Allocation": [
+      "QChS"
+    ],
+    "low level requirement": [
+      "QChS shall apply separate, independent quality flags that do not modify the observation."
+    ],
+    "allocation_requirements": {
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-125",
+          "text": "The Clarus system shall not modify original observations."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-125H1",
+            "text": "QChS shall apply separate, independent quality flags that do not modify the observation."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-162",
+    "llrid": [
+      "F-162H1"
+    ],
+    "high level requirement": "The Clarus system shall be able to implement quality checking spatial tests using available data.",
+    "Allocation": [
+      "QChS"
+    ],
+    "low level requirement": [
+      "QChS shall be able to implement quality checking spatial tests using available data."
+    ],
+    "allocation_requirements": {
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-162",
+          "text": "The Clarus system shall be able to implement quality checking spatial tests using available data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-162H1",
+            "text": "QChS shall be able to implement quality checking spatial tests using available data."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-165",
+    "llrid": [
+      "F-165H1"
+    ],
+    "high level requirement": "The Clarus system shall be able to base its quality checking process on values from multiple observations.",
+    "Allocation": [
+      "QChS"
+    ],
+    "low level requirement": [
+      "QChS shall be able to flag observations based on more than one observation type."
+    ],
+    "allocation_requirements": {
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-165",
+          "text": "The Clarus system shall be able to base its quality checking process on values from multiple observations."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-165H1",
+            "text": "QChS shall be able to flag observations based on more than one observation type."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "F-166",
+    "llrid": [
+      "F-166H1"
+    ],
+    "high level requirement": "The Clarus system shall be able to base its quality checking process on values distributed in time.",
+    "Allocation": [
+      "QChS"
+    ],
+    "low level requirement": [
+      "QChS shall be able to base its quality checking process on values distributed in time."
+    ],
+    "allocation_requirements": {
+      "QChS": {
+        "high_level_requirement": {
+          "id": "F-166",
+          "text": "The Clarus system shall be able to base its quality checking process on values distributed in time."
+        },
+        "low_level_requirements": [
+          {
+            "id": "F-166H1",
+            "text": "QChS shall be able to base its quality checking process on values distributed in time."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "P-023",
+    "llrid": [
+      "P-023H1"
+    ],
+    "high level requirement": "The Clarus system shall be able to complete an automated quality checking check of environmental data within ten seconds of data receipt.",
+    "Allocation": [
+      "QChS"
+    ],
+    "low level requirement": [
+      "A QChS shall be able to complete an automated quality check within ten seconds of when data is available for checking."
+    ],
+    "allocation_requirements": {
+      "QChS": {
+        "high_level_requirement": {
+          "id": "P-023",
+          "text": "The Clarus system shall be able to complete an automated quality checking check of environmental data within ten seconds of data receipt."
+        },
+        "low_level_requirements": [
+          {
+            "id": "P-023H1",
+            "text": "A QChS shall be able to complete an automated quality check within ten seconds of when data is available for checking."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "D-011",
+    "llrid": [
+      "D-011A1",
+      "D-011A2",
+      "D-011A3",
+      "D-011A4",
+      "D-011A5"
+    ],
+    "high level requirement": "The Clarus system shall be able to be hosted at one or more physical locations.",
+    "Allocation": [],
+    "low level requirement": [
+      "The Clarus system shall track its constituent hosts.",
+      "The Clarus system shall allocate each collector to a specific host.",
+      "The Clarus system shall allocate each contributor to a specific host.",
+      "Clarus hosts shall be able to aggregate environmental data from other Clarus hosts.",
+      "Clarus hosts shall be able to distribute queries to other Clarus hosts."
+    ],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "D-011",
+          "text": "The Clarus system shall be able to be hosted at one or more physical locations."
+        },
+        "low_level_requirements": [
+          {
+            "id": "D-011A1",
+            "text": "The Clarus system shall track its constituent hosts."
+          },
+          {
+            "id": "D-011A2",
+            "text": "The Clarus system shall allocate each collector to a specific host."
+          },
+          {
+            "id": "D-011A3",
+            "text": "The Clarus system shall allocate each contributor to a specific host."
+          },
+          {
+            "id": "D-011A4",
+            "text": "Clarus hosts shall be able to aggregate environmental data from other Clarus hosts."
+          },
+          {
+            "id": "D-011A5",
+            "text": "Clarus hosts shall be able to distribute queries to other Clarus hosts."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "D-021",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall use hardware that implements industry accepted standard interfaces.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "D-021",
+          "text": "The Clarus system shall use hardware that implements industry accepted standard interfaces."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "D-031",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall use software that implements industry accepted standard interfaces.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "D-031",
+          "text": "The Clarus system shall use software that implements industry accepted standard interfaces."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "D-041",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall be able to operate on redundant hardware.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "D-041",
+          "text": "The Clarus system shall be able to operate on redundant hardware."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "D-101",
+    "llrid": [],
+    "high level requirement": "All HTML coding shall meet FHWA requirements for web sites.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "D-101",
+          "text": "All HTML coding shall meet FHWA requirements for web sites."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "D-111",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall support modular components.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "D-111",
+          "text": "The Clarus system shall support modular components."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "D-121",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall be able to use latitude, longitude, and elevation coordinates to specify location to the nearest three feet.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "D-121",
+          "text": "The Clarus system shall be able to use latitude, longitude, and elevation coordinates to specify location to the nearest three feet."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "D-126",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall use Coordinated Universal Time (UTC) for all timestamps.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "D-126",
+          "text": "The Clarus system shall use Coordinated Universal Time (UTC) for all timestamps."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-801",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall alert users to system modifications.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-801",
+          "text": "The Clarus program shall alert users to system modifications."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "P-011",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall be able to publish environmental data at three times the volume rate that it collects it.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "P-011",
+          "text": "The Clarus system shall be able to publish environmental data at three times the volume rate that it collects it."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "P-041",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall be able to support six hundred concurrent users.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "P-041",
+          "text": "The Clarus system shall be able to support six hundred concurrent users."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "P-042",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall be able to support six thousand registered users.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "P-042",
+          "text": "The Clarus system shall be able to support six thousand registered users."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "Q-011",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall be able to mitigate communication denial-of- service attacks.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "Q-011",
+          "text": "The Clarus system shall be able to mitigate communication denial-of- service attacks."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "Q-013",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall be able to respond to 95% of all requests for environmental data 95% of the time.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "Q-013",
+          "text": "The Clarus system shall be able to respond to 95% of all requests for environmental data 95% of the time."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-201",
+    "llrid": [
+      "X-20110",
+      "X-20111",
+      "X-20112",
+      "X-20113",
+      "X-20114",
+      "X-20115",
+      "X-20116",
+      "X-20118",
+      "X-20119",
+      "X-20120",
+      "X-20121",
+      "X-20123",
+      "X-20124",
+      "X-20126",
+      "X-20127",
+      "X-20128",
+      "X-20129",
+      "X-20131",
+      "X-20132",
+      "X-20133",
+      "X-20134",
+      "X-20135",
+      "X-20136",
+      "X-20139",
+      "X-20140",
+      "X-20141",
+      "X-20142",
+      "X-20149",
+      "X-20152",
+      "X-20165",
+      "X-20166"
+    ],
+    "high level requirement": "The Clarus program shall establish data sharing agreements with all participating sources of environmental data.",
+    "Allocation": [],
+    "low level requirement": [
+      "The Clarus program shall identify categories of recipients for dissemination of data.",
+      "The Clarus program shall determine the need for bilateral Clarus Data Sharing Agreements with countries, agencies, states, and regions.",
+      "The authorized representative(s) of the contributors shall be identified.",
+      "The contributors shall identify and define the types of data and information that will be included in the Clarus Data Sharing Agreement.",
+      "The contributors shall identify the intended use of their shared data and information.",
+      "The contributors shall identify the categories of recipients of their shared data and information.",
+      "The contributors shall define the units of measurements of their shared data and information.",
+      "The Clarus program shall determine how it will provide data and information to contributors.",
+      "The Clarus program shall provide data and information statistics on its operation to contributors.",
+      "The contributors shall inform the Clarus program of changes in authorized personnel/offices.",
+      "The Clarus program shall inform contributors of the \"acceptance and use\" of their data and information.",
+      "The Clarus Initiative Management Team shall undertake joint communications activities and products that will enhance public understanding and dissemination of contributions of the Clarus program.",
+      "The Clarus Initiative Management Team shall agree upon the activities and products that will enhance public understanding/ communication of the contribution of the Clarus program.",
+      "The contributors shall inform the Clarus program of known error(s) and modifications in its data and information.",
+      "The Clarus program shall determine its redistribution of shared data from contributors based upon Clarus Data Sharing Agreements.",
+      "The Clarus program shall report successes and failures in data and information transmission to its contributors.",
+      "The contributors shall report periods of data and information outages to the Clarus program.",
+      "The Clarus program shall maintain information about requestors and their access to data and information.",
+      "The Clarus Initiative Management Team shall review and amend data and information sharing and use policies.",
+      "The Clarus Initiative Management Team shall specify the general frequency of policy meetings.",
+      "The Clarus Initiative Coordinating Committee shall nominate technical expert(s) to participate on technical working groups.",
+      "The requestors shall adhere to the intellectual property requirements of the Clarus User Agreement.",
+      "The contributors shall adhere to the intellectual property requirements of the Clarus Data Sharing Agreement.",
+      "The contributors shall have the right to use the Clarus system data and information for purposes delineated within the Clarus Data Sharing Agreement.",
+      "The requestors shall have the right to use the Clarus system data and information for purposes delineated within the Clarus User Agreement.",
+      "The Clarus program shall have the right to reject the use of data and information provided by the contributors when deemed appropriate.",
+      "The Clarus program shall inform contributors of the policies, processes and procedures employed to reject data and information provided by the contributors.",
+      "The contributors shall provide the Clarus program with a timely notice of their intent to change, alter, replace, or eliminate any shared data and information as specified within this Clarus Data Sharing Agreement.",
+      "Any reference in the Clarus Data Sharing Agreement to statutes, regulations and rules shall be a reference to the amended, substituted, replaced or re-enacted statute, regulations and rules.",
+      "The Clarus program shall provide to contributors the limitation of liability for contributing environmental data and metadata.",
+      "The Clarus program shall provide to requesters the limitation of liability for using environmental data and metadata."
+    ],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-201",
+          "text": "The Clarus program shall establish data sharing agreements with all participating sources of environmental data."
+        },
+        "low_level_requirements": [
+          {
+            "id": "X-20110",
+            "text": "The Clarus program shall identify categories of recipients for dissemination of data."
+          },
+          {
+            "id": "X-20111",
+            "text": "The Clarus program shall determine the need for bilateral Clarus Data Sharing Agreements with countries, agencies, states, and regions."
+          },
+          {
+            "id": "X-20112",
+            "text": "The authorized representative(s) of the contributors shall be identified."
+          },
+          {
+            "id": "X-20113",
+            "text": "The contributors shall identify and define the types of data and information that will be included in the Clarus Data Sharing Agreement."
+          },
+          {
+            "id": "X-20114",
+            "text": "The contributors shall identify the intended use of their shared data and information."
+          },
+          {
+            "id": "X-20115",
+            "text": "The contributors shall identify the categories of recipients of their shared data and information."
+          },
+          {
+            "id": "X-20116",
+            "text": "The contributors shall define the units of measurements of their shared data and information."
+          },
+          {
+            "id": "X-20118",
+            "text": "The Clarus program shall determine how it will provide data and information to contributors."
+          },
+          {
+            "id": "X-20119",
+            "text": "The Clarus program shall provide data and information statistics on its operation to contributors."
+          },
+          {
+            "id": "X-20120",
+            "text": "The contributors shall inform the Clarus program of changes in authorized personnel/offices."
+          },
+          {
+            "id": "X-20121",
+            "text": "The Clarus program shall inform contributors of the \"acceptance and use\" of their data and information."
+          },
+          {
+            "id": "X-20123",
+            "text": "The Clarus Initiative Management Team shall undertake joint communications activities and products that will enhance public understanding and dissemination of contributions of the Clarus program."
+          },
+          {
+            "id": "X-20124",
+            "text": "The Clarus Initiative Management Team shall agree upon the activities and products that will enhance public understanding/ communication of the contribution of the Clarus program."
+          },
+          {
+            "id": "X-20126",
+            "text": "The contributors shall inform the Clarus program of known error(s) and modifications in its data and information."
+          },
+          {
+            "id": "X-20127",
+            "text": "The Clarus program shall determine its redistribution of shared data from contributors based upon Clarus Data Sharing Agreements."
+          },
+          {
+            "id": "X-20128",
+            "text": "The Clarus program shall report successes and failures in data and information transmission to its contributors."
+          },
+          {
+            "id": "X-20129",
+            "text": "The contributors shall report periods of data and information outages to the Clarus program."
+          },
+          {
+            "id": "X-20131",
+            "text": "The Clarus program shall maintain information about requestors and their access to data and information."
+          },
+          {
+            "id": "X-20132",
+            "text": "The Clarus Initiative Management Team shall review and amend data and information sharing and use policies."
+          },
+          {
+            "id": "X-20133",
+            "text": "The Clarus Initiative Management Team shall specify the general frequency of policy meetings."
+          },
+          {
+            "id": "X-20134",
+            "text": "The Clarus Initiative Coordinating Committee shall nominate technical expert(s) to participate on technical working groups."
+          },
+          {
+            "id": "X-20135",
+            "text": "The requestors shall adhere to the intellectual property requirements of the Clarus User Agreement."
+          },
+          {
+            "id": "X-20136",
+            "text": "The contributors shall adhere to the intellectual property requirements of the Clarus Data Sharing Agreement."
+          },
+          {
+            "id": "X-20139",
+            "text": "The contributors shall have the right to use the Clarus system data and information for purposes delineated within the Clarus Data Sharing Agreement."
+          },
+          {
+            "id": "X-20140",
+            "text": "The requestors shall have the right to use the Clarus system data and information for purposes delineated within the Clarus User Agreement."
+          },
+          {
+            "id": "X-20141",
+            "text": "The Clarus program shall have the right to reject the use of data and information provided by the contributors when deemed appropriate."
+          },
+          {
+            "id": "X-20142",
+            "text": "The Clarus program shall inform contributors of the policies, processes and procedures employed to reject data and information provided by the contributors."
+          },
+          {
+            "id": "X-20149",
+            "text": "The contributors shall provide the Clarus program with a timely notice of their intent to change, alter, replace, or eliminate any shared data and information as specified within this Clarus Data Sharing Agreement."
+          },
+          {
+            "id": "X-20152",
+            "text": "Any reference in the Clarus Data Sharing Agreement to statutes, regulations and rules shall be a reference to the amended, substituted, replaced or re-enacted statute, regulations and rules."
+          },
+          {
+            "id": "X-20165",
+            "text": "The Clarus program shall provide to contributors the limitation of liability for contributing environmental data and metadata."
+          },
+          {
+            "id": "X-20166",
+            "text": "The Clarus program shall provide to requesters the limitation of liability for using environmental data and metadata."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "X-205",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall maintain continuous 24x7 operations.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-205",
+          "text": "The Clarus program shall maintain continuous 24x7 operations."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-207",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall provide an environment that has uninterruptible power for the Clarus system.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-207",
+          "text": "The Clarus program shall provide an environment that has uninterruptible power for the Clarus system."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-209",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall provide an environment that has redundant communication for the Clarus system.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-209",
+          "text": "The Clarus program shall provide an environment that has redundant communication for the Clarus system."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-211",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall provide network management tools.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-211",
+          "text": "The Clarus program shall provide network management tools."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-215",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall provide setup support.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-215",
+          "text": "The Clarus program shall provide setup support."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-221",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall provide for customer service.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-221",
+          "text": "The Clarus program shall provide for customer service."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-225",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall provide a trained support staff.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-225",
+          "text": "The Clarus program shall provide a trained support staff."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-232",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall define quality checking rules for environmental observations.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-232",
+          "text": "The Clarus program shall define quality checking rules for environmental observations."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-233",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall define data retention standards.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-233",
+          "text": "The Clarus program shall define data retention standards."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-235",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall provide documentation of Clarus standards.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-235",
+          "text": "The Clarus program shall provide documentation of Clarus standards."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-237",
+    "llrid": [],
+    "high level requirement": "The Clarus program standards shall accommodate contributions of new sensor technologies to the Clarus system.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-237",
+          "text": "The Clarus program standards shall accommodate contributions of new sensor technologies to the Clarus system."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-239",
+    "llrid": [],
+    "high level requirement": "The Clarus program standards shall support multiple methods of data delivery to users.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-239",
+          "text": "The Clarus program standards shall support multiple methods of data delivery to users."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-305",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall maintain a comprehensive Clarus system test environment.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-305",
+          "text": "The Clarus program shall maintain a comprehensive Clarus system test environment."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-311",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall test all software changes in the designated test environment before deployment to production.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-311",
+          "text": "The Clarus program shall test all software changes in the designated test environment before deployment to production."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-315",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall test all hardware changes in the designated test environment before deployment to production.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-315",
+          "text": "The Clarus program shall test all hardware changes in the designated test environment before deployment to production."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-601",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall operate the Clarus system according to its published IT Security Plan.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-601",
+          "text": "The Clarus program shall operate the Clarus system according to its published IT Security Plan."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-605",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall operate according to Government IT security requirements as outlined in OMB Circular A-130, Management of Federal Information Resources, Appendix III, Security of Federal Automated Information Resources.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-605",
+          "text": "The Clarus program shall operate according to Government IT security requirements as outlined in OMB Circular A-130, Management of Federal Information Resources, Appendix III, Security of Federal Automated Information Resources."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-611",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall operate according to Government IT security requirements as outlined in the National Institute of Standards and Technology (NIST) Guidelines, Departmental Information Resource Management Manual, and associated guidelines.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-611",
+          "text": "The Clarus program shall operate according to Government IT security requirements as outlined in the National Institute of Standards and Technology (NIST) Guidelines, Departmental Information Resource Management Manual, and associated guidelines."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-615",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall operate according to Government IT security requirements as outlined in U.S. DOT Order 1630.2B, Personnel Security Management.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-615",
+          "text": "The Clarus program shall operate according to Government IT security requirements as outlined in U.S. DOT Order 1630.2B, Personnel Security Management."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-805",
+    "llrid": [],
+    "high level requirement": "Weather service providers shall be able to use Clarus data to provide localized special weather products.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-805",
+          "text": "Weather service providers shall be able to use Clarus data to provide localized special weather products."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-811",
+    "llrid": [],
+    "high level requirement": "Public agency maintenance and construction personnel shall be able to use the Clarus system to obtain environmental conditions.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-811",
+          "text": "Public agency maintenance and construction personnel shall be able to use the Clarus system to obtain environmental conditions."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-815",
+    "llrid": [],
+    "high level requirement": "Rail system personnel shall be able to use the Clarus system to obtain environmental conditions.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-815",
+          "text": "Rail system personnel shall be able to use the Clarus system to obtain environmental conditions."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-821",
+    "llrid": [],
+    "high level requirement": "Traffic management personnel shall be able to use the Clarus system to obtain environmental conditions.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-821",
+          "text": "Traffic management personnel shall be able to use the Clarus system to obtain environmental conditions."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-823",
+    "llrid": [],
+    "high level requirement": "Transit personnel shall be able to use the Clarus system to obtain environmental conditions.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-823",
+          "text": "Transit personnel shall be able to use the Clarus system to obtain environmental conditions."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-825",
+    "llrid": [],
+    "high level requirement": "The freight community shall be able to use the Clarus system to obtain environmental conditions.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-825",
+          "text": "The freight community shall be able to use the Clarus system to obtain environmental conditions."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-827",
+    "llrid": [],
+    "high level requirement": "Emergency management and public safety personnel shall be able to use the Clarus system to obtain environmental conditions.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-827",
+          "text": "Emergency management and public safety personnel shall be able to use the Clarus system to obtain environmental conditions."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-905",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall maintain information about data providers.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-905",
+          "text": "The Clarus program shall maintain information about data providers."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-910",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall maintain metadata about each data provider's network.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-910",
+          "text": "The Clarus program shall maintain metadata about each data provider's network."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-915",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall maintain information about data provider redistribution restrictions.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-915",
+          "text": "The Clarus program shall maintain information about data provider redistribution restrictions."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-921",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall maintain information about service providers.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-921",
+          "text": "The Clarus program shall maintain information about service providers."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-925",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall maintain information about service provider communications.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-925",
+          "text": "The Clarus program shall maintain information about service provider communications."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-931",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall maintain information about service provider access to data.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-931",
+          "text": "The Clarus program shall maintain information about service provider access to data."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-935",
+    "llrid": [],
+    "high level requirement": "The Clarus program shall allow potential weather element data providers to request permission to submit weather information.",
+    "Allocation": [],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "UNALLOCATED": {
+        "high_level_requirement": {
+          "id": "X-935",
+          "text": "The Clarus program shall allow potential weather element data providers to request permission to submit weather information."
+        },
+        "low_level_requirements": []
+      }
+    }
+  },
+  {
+    "id": "X-101",
+    "llrid": [],
+    "high level requirement": "The Clarus system shall accept data only from sources which data sharing agreements have been established.",
+    "Allocation": [
+      "(The Clarus program shall approve sources.)"
+    ],
+    "low level requirement": [],
+    "allocation_requirements": {
+      "(The Clarus program shall approve sources.)": {
+        "high_level_requirement": {
+          "id": "X-101",
+          "text": "The Clarus system shall accept data only from sources which data sharing agreements have been established."
+        },
+        "low_level_requirements": []
+      }
+    }
+  }
+]

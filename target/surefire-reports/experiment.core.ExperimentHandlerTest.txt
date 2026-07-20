@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: experiment.core.ExperimentHandlerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in experiment.core.ExperimentHandlerTest
